@@ -8,5 +8,5 @@ image processing class - 002
 ### Student Info :
 * Full name : Mohammad Mahdi Esmaeil Zadeh
 * github id : [Mohammadsemnan](https://github.com/Mohammadsemnan)
-* Email : [Contact](mailto:doostan123@protonmail.com)
+* Email : [doostan123@protonmail.com](mailto:doostan123@protonmail.com)
 * Type : ---
