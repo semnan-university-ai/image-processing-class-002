@@ -1,6 +1,9 @@
 
 
-کد متلب برای GPA در بازه 1-20 که با ضزیب 5 محاسبه میشود
+کد متلب برای GPA در بازه 1-20 که با ضزیب 5 محاسبه میشود که مانند جدول زیر است
+
+![Mark-grade-for-grade-point-average-GPA-Grade-Range-of-marks-Point](https://user-images.githubusercontent.com/94211519/156819936-85999806-9381-4700-95b6-3f43cbec48eb.png)
+
 
 ```
 %GPA
