@@ -6,7 +6,7 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
-* github id : ---
-* Email : ---
+* Full name : Ali Torabzadeh
+* github id : alitorabzadeh
+* Email : ali.torabzadeh72@gmail.com
 * Type : ---
