@@ -1,3 +1,4 @@
+```
 %GPA score system
 clc;
 clear;
@@ -33,3 +34,4 @@ if studnetnumber >= 0 && studnetnumber <= 20
 else
     ans = "Out of range"
 end
+```
