@@ -1,3 +1,4 @@
+%GPA for persian scores
 %GPA
 clear
 clc
