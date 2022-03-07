@@ -5,8 +5,7 @@ grade = "";
 number = input('Enter your grade\n');
 
 if number>=0 && number<=20
-    x=number*5
-    number=fix(number*5) 
+    number=fix(number*5);
     if number>=97 && number<=100
         grade = "(4.0) A+";
     elseif number>=93 && number<=96
