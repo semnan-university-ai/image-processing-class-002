@@ -6,7 +6,7 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
-* github id : ---
-* Email : ---
+* Full name : Mohamad Saeed Ghasemi
+* github id : msg67
+* Email : ms.ghasemi82.saeed@gmail.com 
 * Type : ---
