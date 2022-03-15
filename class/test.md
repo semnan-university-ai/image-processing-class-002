@@ -47,7 +47,7 @@ figure, imshow(image1);
 
 
 
-![text](https://docs.github.com/assets/cb-319648/images/help/writing/image-rendered.png)
+![text](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/class/cm.png?token=GHSAT0AAAAAABSKIMYVMCIWMYVMSRGJD5SKYRQLUWA)
 
 
 
@@ -63,6 +63,9 @@ figure, imshow(image1);
 
 
   </diV>
+
+
+
 
 
 سایت خوبی است
