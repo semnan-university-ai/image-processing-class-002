@@ -65,3 +65,5 @@ end
 ```
 
 در نهایت شکل خروجی به این صورت می باشد:
+![This is an image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/mobina-t77/gpa%20output.png)
+
