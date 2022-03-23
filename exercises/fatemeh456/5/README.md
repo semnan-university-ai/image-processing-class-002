@@ -27,6 +27,6 @@ imwrite(gray_img,'MyImage.png')
 تصوير اوليه و نهايي را در ادامه خواهيم ديد :
 </div>
 <br/>
-![Before]()
+![Before](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/5/fruit.jfif)
 <br/>
-![After]()
+![After](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/5/MyImage.png?token=GHSAT0AAAAAABPAIYAI7YCRAZKYFKLV24IMYR3BF6Q)
