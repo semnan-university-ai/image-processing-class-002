@@ -9,6 +9,7 @@ imshow(gray_img)
 [x y]=size(gray_img);
 drawcircle('Center',[x y]/2,'Radius',x/8);
 ```
+<div dir="rtl">
 #### توضیحات :
 <br/>
 جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود . 
@@ -35,4 +36,4 @@ drawcircle('Center',[x y]/2,'Radius',x/8);
 در نهايت تصوير زير حاصل خواهد شد :  
 </div>
 <br/>
-![Result]()
+![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/11/Result.PNG?token=GHSAT0AAAAAABPAIYAJ3WXXBKVTKVI6IDSIYR3DLWQ)
