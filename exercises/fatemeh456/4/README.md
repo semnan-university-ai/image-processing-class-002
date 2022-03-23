@@ -31,7 +31,7 @@ close all;
 سپس تصویر ورودی را می خوانیم 
 <br/>
 </div>
-![Source image]()
+![Source image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/4/Cat.jfif)
 <br/>
 <div dir="rtl">
 و چون تمرکز ما تا به این جا کار بر روی تصاویر خاکستری است آن را از رنگی به خاکستری تبدیل می کنیم :
@@ -72,15 +72,15 @@ subplot(222);imshow(gray_img);title("Negative");
 imwrite(gray_img,'MyImage.png')
 ```
 <br/>
-![Negative Image]()
+![Negative Image](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/4/MyImage.png?token=GHSAT0AAAAAABPAIYAJ2ZLYOFTN7CGEPFVWYR3AUPA)
 <br/>
 <div dir="rtl">
 #### نتیجه نهایی
 </div>
-![Result]()
+![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/4/Result.PNG?token=GHSAT0AAAAAABPAIYAIDXWLW3SWWVC77O64YR3AU6A)
 <br/>
 <div dir="rtl">
 اگر همين روند را بر روي تصوير رنگي  مان اعمال مي كرديم نتيجه نهايي ما به شكل زير در مي آمد :
 </div>
 <br/>
-![Negative Image RGB]()
+![Negative Image RGB](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/4/MyImageRGB.png?token=GHSAT0AAAAAABPAIYAIEOLI4VCAYU5V7FZAYR3AVTA)
