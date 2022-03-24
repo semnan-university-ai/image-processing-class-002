@@ -8,5 +8,5 @@ image processing class - 002
 ### Student Info :
 * Full name : Mohamad Saeed Ghasemi
 * github id : msg67
-* Email : ms.ghasemi82.saeed@gmail.com 
+* Email : ghasemi82.saeed@gmail.com  & ms.ghasemi@aut.ac.ir
 * Type : ---
