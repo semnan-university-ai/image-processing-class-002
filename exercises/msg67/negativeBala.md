@@ -31,4 +31,21 @@ sizeHeight = size(1,2);
 ```
 imgGray2=int32(imgGray);
 ```
+در کد زیر نیز ابتدا سطرها رو از 1 تا نصف اندازه طول تصویر و بعد در حلقه بعد مقادیر روشنایی تصویر منهای 255 شده بعد در یک 1- تقسیم می‌کنیم تا مقادیر + بدست آید: 
 
+```
+for i=1 : sizeWidth/2
+    for j=1 : sizeHeight
+        imgGray2(i,j)= imgGray(i,j)- 255;
+        if imgGray2(i,j) < 0
+            imgGray2(i,j)=  imgGray2(i,j) * -1;
+        end
+    end
+end    
+```
+درآخر نیز نتیجه را نمایش می‌دهیم:
+```
+figure, imshow(uint8(imgGray2));
+```
+# نتیجه:
+![image padding](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/negativeBala.png)
