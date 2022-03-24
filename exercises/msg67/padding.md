@@ -61,7 +61,7 @@ for i=1 : sizeWidth
     end
 end 
 ```
-و د رنهایت آن را نشان میدهیم:
+و درنهایت آن را نشان میدهیم:
 ```
 figure, imshow(uint8(padd));
 ```
