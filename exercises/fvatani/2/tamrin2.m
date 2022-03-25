@@ -3,9 +3,8 @@ clear all
 close all
 
 i=imread('pears.png'); 
-figure,imshow(i);
-
 i=rgb2gray(i); 
+
 p=input('Input window size of filter:');  
 p=floor(p/2);
 pad=uint8(zeros(size(i)+(2*p)));  
