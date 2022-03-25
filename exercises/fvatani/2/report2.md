@@ -68,7 +68,8 @@ end
 ```
 figure,imshow(pad_image)
 ```
-خروجی نمایش داده می‌شود.تصویرنهایی:
+خروجی نمایش داده می‌شود. 
+تصویرنهایی با ورودی 5:
 
  ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fvatani/2/tamrin2.png)
 
