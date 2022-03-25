@@ -2,49 +2,49 @@ clc
 clear all
 close all
 
-i=imread('pears.png'); 
-i=rgb2gray(i); 
+image=imread('pears.png'); 
+image=rgb2gray(image); 
 
-p=input('Input window size of filter:');  
+p=input('Input window size to padding:');  
 p=floor(p/2);
-pad=uint8(zeros(size(i)+(2*p)));  
+pad_image=uint8(zeros(size(image)+(2*p)));  
 
-for x=1:size(i,1)
-            for y=1:size(i,2)
-                pad(x+p,y+p)=i(x,y); 
+for x=1:size(image,1)
+            for y=1:size(image,2)
+                pad_image(x+p,y+p)=image(x,y); 
                 
                 if y==1 
                     for z=0:(p-1)
-                        pad(x+p,y+z)=i(x,y);
+                        pad_image(x+p,y+z)=image(x,y);
                     end
                 end
                 
-                if y==size(i,2)
+                if y==size(image,2)
                     for z=1:p
-                        pad(x+p,y+(p+z))=i(x,y);
+                        pad_image(x+p,y+(p+z))=image(x,y);
                     end
                 end
                                 
             end                
 end
 
-for x=1:size(pad,1)
-            for y=1:size(pad,2)
+for x=1:size(pad_image,1)
+            for y=1:size(pad_image,2)
                 
                 if x==(p+1)
                     for z=1:p
-                        pad(x-z,y)=pad(x,y);
+                        pad_image(x-z,y)=pad_image(x,y);
                     end
                 end
                 
                                 
-                if x==(size(i,1)+p)
+                if x==(size(image,1)+p)
                     for z=1:p
-                        pad(x+z,y)=pad(x,y);
+                        pad_image(x+z,y)=pad_image(x,y);
                     end
                 end
                 
             end
 end
                 
-figure,imshow(pad)
+figure,imshow(pad_image)
