@@ -33,18 +33,17 @@ for x=1:size(image,1)
                                 image(random_x-i,random_y+j)=255;     
                             end
                     end
-                        break
+                    break
                     elseif (random_x+49) > size(image,1) &&  (random_y+49) > size(image,2)
                     for i=0:49
                             for j=0:49
                                 image(random_x-i,random_y-j)=255;     
                             end
                     end
-                        break
+                    break
                     end
                 end
-                
-                
+                                
             end
 end
 
