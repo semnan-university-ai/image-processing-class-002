@@ -40,4 +40,4 @@ axis equal
 در کد بالا که اصولا برای رسم شکل می باشد، ابتدا با pos محل شروع کشیدن شکل(مربع) و طول و عرضش را مشخص میکنیم، که چون شکل ما دایره است، پس طول و عرضش باید بابر باشد. نکته بعدی این است که چون شکل حالت مربع دارد و نقطه مشخص شده گوشه مربع و محل شروع کشیدن شکل می‌باشد، لذا مرکز دایره با آن قسمت متفاوت است، پس برای ابکه آن قسمت به مرکز دایره تبدیل شود، آن را منهای طول و عرض شکل کردیم.
 سپس با تابع rectangle و آرگومان Curature=(1,1) نمایش دایره را ایجاد کردیم، سپس با آرگومان های دیگر رنگ داخل و رنگ مرزی شکل را مشخص کردیم.
 ## نتیجه:
-![image padding](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/midCircle.png)
+![image Result](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/midCircle.png)
