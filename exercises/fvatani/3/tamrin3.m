@@ -5,8 +5,8 @@ close all
 image=imread('pears.png'); 
 image=rgb2gray(image); 
 
-random_x = randi(size(image,1));
-random_y = randi(size(image,2));
+random_x = randi(size(image,1))+1;
+random_y = randi(size(image,2))+1;
 
 for x=1:size(image,1)
             for y=1:size(image,2)
