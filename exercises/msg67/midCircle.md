@@ -1,0 +1,35 @@
+## تمرین: ایجاد دایره بر روی تصویر
+
+این قسمت، برای پاک کردن حافظه و متغیرهایی است که شاید در اجرا های قبلی مورد استفاده قرارگرفته‌اند، و تقریبا در همه کدهای ما استفاده می‌شود.
+
+```
+clear;
+close all;
+clc;
+```
+با این قسمت از کد، عکس را از فولدر بنچمارک خوانده و و در متغیر img نگهداری می‌کنیم. در خطوط بعد طول و عرض آن را در متغیرهای اسکالر می‌ریزیم. 
+```
+img= imread("benchmark/cat.png");
+
+size=size(img);
+sizeWidth = size(1,1);
+sizeHeight = size(1,2);
+```
+### در اینجا به وسیله 2 تابع رسم دایره را پیاده سازی می‌کنیم:
+در راه اول، ایتدا یک مقدار برای شعاع انتخاب می‌کنیم. سپس با تابع figure تصویر را نمایش داده و با ```hold on``` باعث می‌شویم که صفحه عکس برای پلات های بعدی نیز آماده باشد.
+
+سپس با 
+
+```
+r=200;
+
+figure,imshow(uint8(img)),hold on
+axis on
+ang=0:0.001:2*pi; 
+xp=r*cos(ang);
+yp=r*sin(ang);
+plot((sizeHeight/2)+xp,(sizeWidth/2)+yp, 'r', 'MarkerSize', 1, 'LineWidth', 10);
+```
+
+## نتیجه:
+![image padding](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/midCircle.png)
