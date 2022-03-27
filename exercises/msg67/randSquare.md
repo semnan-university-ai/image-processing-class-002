@@ -33,7 +33,25 @@ yrr=yr;
 x=[50 , 50 , 0, 0 ];
 y=[50 , 0 , 0 , 50];
 ```
-
+این قسمت اصلی کد می‌باشد:
+ابتدا بررسی می کند که x و y تولید شده، در بازه مختصات تصویر می باشد یا خیر...
+در صورت نبودن، با یک حلقه while تا زمانی که این شرط برقرار نباشد، تولید عدد رندم ادامه پیدا می کند:
+```
+if xr<(sizeHeight-50) && yr<(sizeWidth-50)
+    plot( x+xr, y+yr , 'b', 'MarkerSize', 10, 'LineWidth', 1);
+    fill(x+xr,y+yr , 'w')
+else
+    while xr>(sizeHeight-50) || yr>(sizeWidth-50)
+     xr=randi(sizeHeight-50);
+     yr=randi(sizeWidth-50);
+     plot( x+xr, y+yr , 'b', 'MarkerSize', 10, 'LineWidth', 1);
+     fill(x+xr,y+yr , 'w')
+     break;
+     
+end
+  
+end
+```
 
 ## نتیجه:
 ![image Result](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/randSquare.png)
