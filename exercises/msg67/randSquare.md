@@ -54,5 +54,5 @@ end
 ```
 
 ## نتیجه:
-### متغیرهای xr و yr جهت تست حلقه while گذاشته شد...
+### متغیرهای xrr و yrr جهت تست حلقه while گذاشته شد...
 ![image Result](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/randSquare.png)
