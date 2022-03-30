@@ -1,4 +1,4 @@
-## تمرین نگاتیو کردن نیمه بالای تصویر
+## تمرین استفاده از فیلتر همسایگی به صورت جذر همسایه های چهارگانه  
 
 این قسمت، برای پاک کردن حافظه و متغیرهایی است که شاید در اجرا های قبلی مورد استفاده قرارگرفته اند، و تقریبا در همه کدهای ما استفاده می‌شود.
 
@@ -39,6 +39,6 @@ for i=2 : sizeWidth-1
     end
 end  
 ```
-و در نهایت نمایش تصویر نهایی:
-``` figure, imshow(uint8(imgGray2)); ```
+و در نهایت نمایش تصویر نهایی با دستور: ``` figure, imshow(uint8(imgGray2)); ```
+
 ![result](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/filterHamsayegi.png)
