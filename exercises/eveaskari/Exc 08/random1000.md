@@ -24,8 +24,8 @@ imshow(img0, []);
 
 ### output
 
-![random1000]()
+![random1000](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2008/random1000.JPG)
 
 ### a part of matrix
 
-![matrix]()
+![matrix](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2008/matrix.JPG)
