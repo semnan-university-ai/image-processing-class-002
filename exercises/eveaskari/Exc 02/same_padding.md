@@ -5,7 +5,7 @@
   </br>
   ### input
   
-  ![monarch]()
+  ![monarch](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2002/monarch.png)
   </br>
   
  <div dir="ltr">
@@ -22,7 +22,7 @@ img = imresize(img, [300 400]);
 figure, imshow(img);
 
   ```
-![graypad]()
+![graypad](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2002/graypad.JPG)
   </div> 
  حال برای دادن پدینگ با یک لایه دور تا دور تصویر به صورت زیر عمل میکنیم:
   <div dir="ltr">
@@ -34,7 +34,7 @@ padd = padarray(img,[1 1],'replicate','both');
 
 figure, imshow(padd);
   ```
-![pad1]()
+![pad1](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2002/pad1.JPG)
   </div> 
  
  چون ممکن است در تصویر پدینگ انجام شده مشخص نباشد آنرا با 10 لایه هم انجام میدهیم. خروجی به صورت زیر می باشد:
@@ -50,12 +50,8 @@ figure, imshow(padd);
   ```
 ### output
   
-![pad10]()
+![pad10](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2002/pad10.JPG)
   </div> 
-  <div dir="ltr">
-  
-  
-  
-  </div> 
+ 
  
   </div>
