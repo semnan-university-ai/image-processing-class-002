@@ -24,7 +24,7 @@ figure, imshow(uint8(sqrt_img));
 تصوير ابتدايي مان به صورت زير مي باشد :
 <br/>
 </div>
-![Source_Image]()
+![Source_Image](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/6/flower.png?token=GHSAT0AAAAAABPAIYAIPA4X6X3TDONAJ7BOYSHJFQQ)
 <div dir="rtl">
 سپس سايز تصوير را در قالب آرايه اي نگه مي داريم . 
 <br/>
@@ -39,4 +39,4 @@ figure, imshow(uint8(sqrt_img));
 در نهايت تصاويررا به نمايش در خواهيم آورد كه براي اين كار نياز است مجدد تصوير را به unit8 تبديل مي كنيم و سپس تصويري به صورت زير خواهيم داشت: 
 </div>
 <br/>
-![Result]()
+![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/6/Result.PNG?token=GHSAT0AAAAAABPAIYAIPZKNAMPGY2BONTCYYSHJGMA)
