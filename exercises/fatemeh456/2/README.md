@@ -40,7 +40,8 @@ both مشخص می کند که در هر دو طرف تصویر هم بصورت 
 <br/>
 در ادامه تصویر اصلی و تصویر حاصل را نمایش داده و تصویر pad شده را در قالب MyImage ذخیره کرده ایم .
 <br/>
-در نهايت خواهیم داشت :  
-</div>
+در نهايت خواهیم داشت:
 <br/>
-![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/2/Result.PNG)
+ ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/2/Result.PNG)
+</div>
+
