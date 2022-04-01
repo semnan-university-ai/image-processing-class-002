@@ -43,4 +43,4 @@ both مشخص می کند که در هر دو طرف تصویر هم بصورت 
 در نهايت خواهیم داشت :  
 </div>
 <br/>
-![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/2/Result.PNG?token=GHSAT0AAAAAABPAIYAIUQHLOF2ANDGT3K2CYSG423A)
+![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/2/Result.PNG)
