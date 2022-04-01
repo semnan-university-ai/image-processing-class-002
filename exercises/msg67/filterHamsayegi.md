@@ -1,4 +1,4 @@
-## تمرین نگاتیو کردن نیمه بالای تصویر
+## تمرین استفاده از فیلتر همسایگی به صورت جذر همسایه های چهارگانه  
 
 این قسمت، برای پاک کردن حافظه و متغیرهایی است که شاید در اجرا های قبلی مورد استفاده قرارگرفته اند، و تقریبا در همه کدهای ما استفاده می‌شود.
 
@@ -25,27 +25,20 @@ size=size(imgGray);
 sizeWidth = size(1,1);
 sizeHeight = size(1,2);
 ```
-
-
-در کد زیر مقادیر تصویر به اینت32 بدون علامت تبدیل می‌شود تا زمانی که منهای 255 می‌شود مقادیر منفی مجاز شوند:
+ساخت یک تصویر، هم‌سایز تصویر اصلی، با متغیرهای دابل و با مقادیر خانه های 0 برای کپی کردن مقادیر حساب شده:
 ```
-imgGray2=int32(imgGray);
+imgGray2=zeros(sizeWidth,sizeHeight);
+imgGray2= double(imgGray2);
 ```
-در کد زیر نیز ابتدا سطرها رو از 1 تا نصف اندازه طول تصویر و بعد در حلقه بعد مقادیر روشنایی تصویر منهای 255 شده بعد در یک 1- تقسیم می‌کنیم تا مقادیر + بدست آید: 
-
+محاسبه مقادیر خواسته شده با دو حلقه ```for``` تو در تو:
 ```
-for i=1 : sizeWidth/2
-    for j=1 : sizeHeight
-        imgGray2(i,j)= imgGray(i,j)- 255;
-        if imgGray2(i,j) < 0
-            imgGray2(i,j)=  imgGray2(i,j) * -1;
-        end
+for i=2 : sizeWidth-1
+    for j=2 : sizeHeight-1
+        imgGray2(i,j)= sqrt(double(imgGray(i,j-1)))+ sqrt(double(imgGray(i,j+1)))...
+            +sqrt(double(imgGray(i-1,j)))+sqrt(double(imgGray(i+1,j))); 
     end
-end    
+end  
 ```
-درآخر نیز نتیجه را نمایش می‌دهیم:
-```
-figure, imshow(uint8(imgGray2));
-```
-# نتیجه:
-![image padding](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/negativeBala.png)
+و در نهایت نمایش تصویر نهایی با دستور: ``` figure, imshow(uint8(imgGray2)); ```
+
+![result](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/filterHamsayegi.png)
