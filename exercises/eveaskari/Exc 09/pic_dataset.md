@@ -108,7 +108,7 @@
                    </br>
  ### Fashion-MNIST
  
- ![fmnist]() 
+ ![fmnist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/fmnist.JPG) 
  
 
  ح) Fashion-MNIST از 60000 تصویر آموزشی و 10000 تصویر آزمایشی تشکیل شده است. این یک پایگاه داده محصولات مد مانند MNIST است. توسعه دهندگان بر این باورند که MNIST بیش از حد مورد استفاده قرار گرفته است، بنابراین آنها این را به عنوان جایگزینی مستقیم برای آن مجموعه داده ایجاد کردند. هر تصویر در مقیاس خاکستری است و با برچسبی از 10 کلاس مرتبط است.                   
@@ -127,11 +127,15 @@
 
 ### Oxford-IIIT Pet Images Dataset
 
+![iiit](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/Oxford-IIIT%20Pet%20Images%20Dataset.png)
+
 د) این مجموعه داده تصویر حیوان خانگی دارای 37 دسته با 200 تصویر برای هر کلاس است. تصاویر بر اساس مقیاس، ژست و نور متفاوت هستند، و دارای حاشیه نویسی حقیقت زمینی مربوط به نژاد، بازگشت سرمایه سر، و تقسیم بندی trimap در سطح پیکسل هستند.
 
 </br>
 
 ### Indoor Scene Recognition
+
+![indor](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/allIndoors.jpg)
 
 ذ) این مجموعه داده برای هر کسی که مدلی را برای تشخیص مناظر داخلی آموزش می دهد بسیار تخصصی است. شامل 67 دسته بندی داخلی در 15620 تصویر است.
 </br>
@@ -139,45 +143,63 @@
 
 ### Celebfaces
 
+![celeb](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/celeb_a.png)
+
 ر) این مجموعه داده تصویر دارای بیش از 200000 تصویر از افراد مشهور مورد علاقه شما است. هر کاماژ افراد مشهور دارای 40 حاشیه نویسی ویژگی است.
 </br>
 
 ### Stanford Dogs Dataset
+
+![dog](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/Stanford_Dogs.jpg)
 
 ز) 20580 تصویر از سگ ها در 120 دسته نژاد منحصر به فرد با تقریباً 150 تصویر برای هر طبقه.
 </br>
 
 ### Google’s Open Images
 
+![open](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/Google%E2%80%99s%20Open%20Images.png)
+
 ژ) با 9 میلیون URL فوق العاده، این یکی از بزرگترین مجموعه داده های تصویر در این لیست است که دارای میلیون ها تصویر حاشیه نویسی شده با برچسب در 6000 دسته است.
 </br>
 
 ### Labelme
+
+![lable](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/Labelme.png)
 
 س) یکی از مجموعه داده های تصویر علوم کامپیوتر MIT که در ارتباط با آزمایشگاه هوش مصنوعی (CSAIL) ایجاد شده است، این یکی دارای 187240 تصویر، 62197 تصویر قبلاً مشروح شده در 658992 شی برچسب گذاری شده است.
 </br>
 
 ### VisualGenome
 
+![vg](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/VisualGenome.png)
+
 ش) Visual Genome برای ارتباط زبان با مفاهیم تصویر سازمان‌یافته ایجاد شد و دارای یک پایگاه دانش بصری دقیق با ۱۰۸،۰۷۷ تصویر قبلی است.
 </br>
 
 ### FERET
+
+![feret](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/FERET.png)
 
 ص) FERET (پایگاه داده فناوری تشخیص چهره) یک مجموعه داده تصویری است که شامل بیش از 14000 تصویر از چهره های حاشیه نویسی شده انسان است.
 </br>
 
 ### Labelled Faces in the Wild
 
+![wild](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/labelled%20faces%20in%20the%20wild.png)
+
 ض) یک مجموعه داده تصویری با عنوان بیش از حد مناسب، چهره های برچسب گذاری شده در طبیعت دارای 13000 تصویر برچسب گذاری شده از چهره انسان است. مخصوصاً برای تشخیص چهره مفید است.
 </br>
 
 ### Places
 
+![places](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/Places.jpg)
+
 ط) این مجموعه داده تصویر صحنه محور شامل 205 دسته صحنه منحصر به فرد با 2.5 میلیون تصویر است که بر اساس یک دسته برچسب گذاری شده اند.
 </br>
 
 ### Flowers
+
+![flower](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/eveaskari/Exc%2009/Flowers.png)
 
 ظ) این مجموعه داده تصویری که دارای گل‌هایی است که معمولاً در سراسر بریتانیا یافت می‌شود، شامل بیش از 102 دسته مختلف است که هر گل از حالت‌ها و تغییرات نوری متفاوت دیده می‌شود.
 
