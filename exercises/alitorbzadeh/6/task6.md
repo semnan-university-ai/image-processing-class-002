@@ -62,4 +62,9 @@
 
 ![image](https://user-images.githubusercontent.com/95109502/161375467-fc951a7f-9479-4172-975d-3f16a52e7a09.png)
 
+**تصویر خاکستری**
+
+
+
+![image](https://user-images.githubusercontent.com/95109502/161375722-524ab845-3645-41b4-afb0-3f905b1ce461.png)
 
