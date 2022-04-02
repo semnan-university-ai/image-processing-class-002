@@ -67,4 +67,5 @@
 ![image](https://user-images.githubusercontent.com/95109502/161375797-5d23e836-7ba3-4f1f-b560-dc01622503b9.png)
 
 **تصویر خروجی**
-![image](https://user-images.githubusercontent.com/95109502/161375941-70b042cf-36bd-4a96-b0b2-a49c741e2ac0.png)
+![image](https://user-images.githubusercontent.com/95109502/161376053-7d558ff7-3708-40be-bd7c-77184cc2e6dd.png)
+
