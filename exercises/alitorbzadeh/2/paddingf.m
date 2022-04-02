@@ -1,0 +1,42 @@
+function [output]=paddingf(input)
+dim=size(input,3);
+if dim~=1
+    input=rgb2gray(input);
+    rows=size(input,1);
+    cols=size(input,2);
+    row=rows+1;
+    col=cols+1;
+    input(row,:)=0;
+    b=zeros(1,cols);
+    input=[b;input];
+    col3=size(input,2);
+    row3=size(input,1);
+    input(:,(col3+1))=0;
+    c=zeros(row3,1);
+    input=[c,input];
+else
+    rows=size(input,1);
+    cols=size(input,2);
+    row=rows+1;
+    col=cols+1;
+    input(row,:)=0;
+    b=zeros(1,cols);
+    input=[b;input];
+    col3=size(input,2);
+    row3=size(input,1);
+    input(:,(col3+1))=0;
+    c=zeros(row3,1);
+    input=[c,input];
+end
+column=size(input,2);
+roww=size(input,1);
+a0=input(:,(column-1));
+input(:,column)=a0;
+a1=input(:,2);
+input(:,1)=a1;
+a2=input((roww-1),:);
+input(roww,:)=a2;
+a3=input(2,:);
+input(1,:)=a3;
+output=input;
+end
