@@ -68,3 +68,8 @@
 
 ![image](https://user-images.githubusercontent.com/95109502/161375722-524ab845-3645-41b4-afb0-3f905b1ce461.png)
 
+**تصویر paddingشده:
+![image](https://user-images.githubusercontent.com/95109502/161375797-5d23e836-7ba3-4f1f-b560-dc01622503b9.png)
+
+**تصویر خروجی**
+
