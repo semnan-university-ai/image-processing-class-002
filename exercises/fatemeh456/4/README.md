@@ -24,7 +24,7 @@ close all;
 ```
 سپس تصوير اصلی را می خوانیم .
 <br/>
- ![Source image]()
+ ![Source image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/4/Cat.jfif)
 <br/>
 چون تمرکز ما تا به این جا کار بر روی تصاویر خاکستری است آن را از رنگی به خاکستری تبدیل می کنیم :
 
@@ -55,4 +55,4 @@ imwrite(gray_img,'MyImage.png')
 ```
 در نهايت تصویر حاصل به صورت زیر خواهد بود :
  
- ![Negative Image]()
+ ![Negative Image](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/4/MyImage.png?token=GHSAT0AAAAAABPAIYAIGFSSMMKEMWR6G6UEYSJ4ZQQ)
