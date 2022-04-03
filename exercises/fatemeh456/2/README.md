@@ -17,7 +17,7 @@ subplot(221);imshow(src_img);title('Source Image');
 subplot(222);imshow(pad_img);title("After Padding");
 imwrite(pad_img,'myImage.png')
 ```
-##### بررسی کد :
+#### بررسی کد :
 جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود. 
 سپس تصوير را خوانده و آن را خاكستري مي كنيم.
 ```
