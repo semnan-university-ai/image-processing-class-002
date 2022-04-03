@@ -23,7 +23,6 @@ clear;
 close all;
 ```
 سپس تصوير اصلی را می خوانیم .
-<br/>
  ![Source image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/4/Cat.jfif)
 <br/>
 چون تمرکز ما تا به این جا کار بر روی تصاویر خاکستری است آن را از رنگی به خاکستری تبدیل می کنیم :
