@@ -54,4 +54,4 @@ end
 ```
 در نهايت خواهیم داشت:
  
- ![Result]()
+ ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/3/Result.PNG?token=GHSAT0AAAAAABPAIYAITPRRCIVBUIEH5L7EYSJ4LKA)
