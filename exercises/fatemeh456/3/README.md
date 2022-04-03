@@ -18,7 +18,7 @@ for i=1:N
     patch(idx(i)+R(:,1),idy(i)+R(:,2),'w')
 end
 ```
-##### بررسی کد :
+#### بررسی کد :
 جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود. 
 سپس تصوير را خوانده و آن را خاكستري مي كنيم.
 ```
@@ -54,4 +54,4 @@ end
 ```
 در نهايت خواهیم داشت:
  
- ![Result]()
+ ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/3/Result.PNG?token=GHSAT0AAAAAABPAIYAITPRRCIVBUIEH5L7EYSJ4LKA)
