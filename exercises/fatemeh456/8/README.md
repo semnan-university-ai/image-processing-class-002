@@ -7,13 +7,14 @@ img=uint8(randi(255,1000,1000,1)); %255 = max number
 figure, imshow(img)
 imwrite(img,'myImage.png')
 ```
-<div dir="rtl">
-#### توضیحات :
-<br/>
-جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود . 
-<br/>
+#### بررسی کد :
+جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود. 
+```
+clc;
+clear;
+close all;
+```
 سپس از تابع randi جهت توليد تصوير با مقادير تصادفي استفاده مي كنيم كه 4 ورودي مي گيرد .
-<br/>
 ورودي اول ماكزيمم مقداري است كه ژيكسل هاي تصوير مي توانند به خود بگيرند.
 <br/>
 ورودي دوم و سوم ابعاد تصوير را مشخص ميكند كه چه تعداد سطر و ستون داشته باشد .
@@ -23,8 +24,15 @@ imwrite(img,'myImage.png')
 <br/>
 استفاده از unit 8 به اين دليل است كه مقاديري كه به صورت تصادفي ايجاد مي شوند اعداد صحيح و مثبت باشند چون مقدار يك پيكسل نمي تواند 
 عددي منفي يا اعشاري باشد .
-<br/>
-در نهايت تصوير نتيجه زير حاصل خواهد شد :  
-</div>
-<br/>
-![Image](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/8/myImage.png?token=GHSAT0AAAAAABPAIYAIRGOHZEQXSH6QP7MAYR3BU6Q)
+
+```
+img=uint8(randi(255,1000,1000,1));
+```
+در نهایت تصویر را نمایش داده و در قالب تصویر جدیدی با نام MyImage ذخیره می کنیم .
+```
+figure, imshow(img)
+imwrite(img,'myImage.png')
+```
+در نهايت نتیجه زیر حاصل خواهد شد:
+ 
+ ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/8/myImage.png?token=GHSAT0AAAAAABPAIYAILGR24WVGBTGQDIVCYSJ5ORA)
