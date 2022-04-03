@@ -37,5 +37,5 @@ end
 در نهايت تصوير را نمايش داده و در قالب تصويري به نام MyImage ذخيره مي كنيم . 
 تصوير اوليه و نهايي را در ادامه خواهيم ديد :
  
-![Before]()
-![After]()
+![Before](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/5/fruit.jfif)
+![After](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/5/MyImage.png?token=GHSAT0AAAAAABPAIYAJNPASSKLFLNWTQKGKYSJ5BXA)
