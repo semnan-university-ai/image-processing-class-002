@@ -2,7 +2,7 @@ clc
 clear all
 close all
 
-image=imread('pears.png'); 
+image=imread('benchmark/fruits.png');
 image=rgb2gray(image); 
 image2=image;
 
