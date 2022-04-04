@@ -19,7 +19,7 @@ figure, imshow(uint8(sqrt_img));
 جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود. 
 تصوير اصلی که به صورت زیر است را خوانده و آن را خاكستري مي كنيم.
 <br/>
- ![Source_Image](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/6/flower.png?token=GHSAT0AAAAAABPAIYAIUW2V2QQZ3MSQZ7YEYSJ5IQA)
+ ![Source_Image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/6/flower.png)
 
 ```
 clc;
