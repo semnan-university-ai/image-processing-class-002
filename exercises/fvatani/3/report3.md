@@ -10,11 +10,10 @@ image=rgb2gray(image);
 ```
 تصویر دریافت شده وازRGB به تصویر خاکستری تبدیل می‌شود. در صورتیکه تصویر خاکستری است خط دوم بایستی کامنت شود.
 ```
-random_x = randi(size(image,1))+1;
-random_y = randi(size(image,2))+1;
+random_x = randi(size(image,1));
+random_y = randi(size(image,2));
 ```
-از تابع randi جهت تولید اعداد تصادفی صحیح استفاده شده است. از آنجا که این تابع یک عدد صحیح بین 0 تا ورودی تولید می‌کند و درایه‌های ماتریس از یک شروع می‌شود حاصل با یک جمع شده است.
-
+از تابع randi جهت تولید اعداد تصادفی صحیح استفاده شده است. این تابع یک عدد تصادفی بین یک تا ورودی تولید می‌کند.
 ```
 for x=1:size(image,1)
             for y=1:size(image,2)
@@ -66,5 +65,7 @@ elseif (random_x+49) > size(image,1) &&  (random_y+49) > size(image,2)
 ```
 figure,imshow(image)
 ```
-تصویر را نشان می‌دهیم. خروجی: 
+تصویر را نشان می‌دهیم.
+
+خروجی: 
  ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fvatani/3/tamrin3.png)
