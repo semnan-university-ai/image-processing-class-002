@@ -58,4 +58,4 @@ figure, imshow(uint8(sqrt_img));
 
 در نهايت خواهیم داشت:
  
- ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/6/Result.PNG?token=GHSAT0AAAAAABPAIYAJTVR4KUYKZ6XB3WRMYSJ5IDQ)
+ ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/6/Result.PNG)
