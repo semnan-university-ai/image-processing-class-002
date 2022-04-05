@@ -35,4 +35,4 @@ imwrite(img,'myImage.png')
 ```
 در نهايت نتیجه زیر حاصل خواهد شد:
  
- ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/8/myImage.png?token=GHSAT0AAAAAABPAIYAILGR24WVGBTGQDIVCYSJ5ORA)
+ ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/8/myImage.png)

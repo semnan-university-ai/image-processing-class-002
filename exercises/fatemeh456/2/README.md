@@ -58,4 +58,4 @@ imwrite(pad_img,'myImage.png')
 ```
 در نهايت خواهیم داشت:
  
- ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/2/Result.PNG?token=GHSAT0AAAAAABPAIYAI4LW4E2GWOQEVC5X2YSJ4DDA)
+ ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/2/Result.PNG?token=GHSAT0AAAAAABPAIYAIDY6X5KDDVXWAFNUYYSLHORA)

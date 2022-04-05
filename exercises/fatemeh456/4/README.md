@@ -55,4 +55,4 @@ imwrite(gray_img,'MyImage.png')
 ```
 در نهايت تصویر حاصل به صورت زیر خواهد بود :
  
- ![Negative Image](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/4/MyImage.png?token=GHSAT0AAAAAABPAIYAIGFSSMMKEMWR6G6UEYSJ4ZQQ)
+ ![Negative Image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/4/MyImage.png)
