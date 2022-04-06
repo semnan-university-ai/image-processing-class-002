@@ -1,6 +1,6 @@
-// T = table([19:20,18:19, 17:18,15:17,14:15,12:14,10:12,0:10],'Variable',{'A+','A','B+','B','C+','C','D','F'}); 
-
-disp(T) 
+clc;
+clear;
+close all;
 
 function score 
 student_score = input("enter your score: ");
