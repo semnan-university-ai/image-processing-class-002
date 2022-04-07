@@ -8,12 +8,7 @@
   </br>
   
   بعد از خواندن عکس ،  تصویر را به خاکستری تبدیل می کنیم.
-  
-</br>
-![grayim](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/alimotavally/tamrin2/grayim.png)
-</br>
-  
-<div dir="ltr">
+  <div dir="ltr">
   
  ```
   clc;
@@ -28,6 +23,11 @@ figure, imshow(img);
 
   ```
   </div> 
+
+![grayim](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/alimotavally/tamrin2/grayim.png)
+</br>
+  
+
  سپس با دستور زیر عملیات پدینگ رو دور تصویر انجام می دیم:
   <div dir="ltr">
   
