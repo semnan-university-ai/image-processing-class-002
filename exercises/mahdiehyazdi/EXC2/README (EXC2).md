@@ -28,8 +28,9 @@ imshow(img_pad);
 <li>
 خروجی تصویر
 </li>
-
-<img scr="./output.png" />
+<p align="center">
+<img src="./output.png">
+</p>
 
 
 </div>
