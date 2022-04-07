@@ -20,7 +20,7 @@ img = rgb2gray(img);
 
 
 ```
-img_pad = padarray(img,1,'replicate','both');
+img_pad = padarray(img,10,'replicate','both');
 imshow(img_pad);
 ```
 <div dir="rtl">
