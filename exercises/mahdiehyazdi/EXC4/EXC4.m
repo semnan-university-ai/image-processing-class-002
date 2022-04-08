@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 
-img = imread('./inputImage4.jpg');
+img = imread('./inputImage.jpg');
 img =rgb2gray(img);
 imshow(img);
 
