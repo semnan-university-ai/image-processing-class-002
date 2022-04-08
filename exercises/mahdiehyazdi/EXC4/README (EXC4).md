@@ -23,6 +23,12 @@ figure,imshow(img);
   <p align="center">
 <img src="./inputImage.jpg" style="width:300px">
 </p><br/>
+  خروجی کد فوق : 
+  
+ <br/>
+  <p align="center">
+<img src="./output2.png" style="width:300px">
+</p><br/>
   در ادامه سایز تصویر به صورت طول و عرض دریافت شده و نیمی از تصویر به صورت عمودی دریافت شده است
 </div><br/>
   

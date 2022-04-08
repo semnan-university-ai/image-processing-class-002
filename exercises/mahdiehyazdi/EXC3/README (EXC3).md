@@ -17,11 +17,18 @@ img =rgb2gray(img);
 figure,imshow(img);
 ```
 <div dir="rtl">
-  خروجی برنامه فوق : 
+  تصویر اصلی ورودی : 
   
  <br/>
   <p align="center">
 <img src="./inputImage.jpg" style="width:700px">
+</p><br/>
+<div dir="rtl">
+  خروجی برنامه فوق : 
+  
+ <br/>
+  <p align="center">
+<img src="./output2.png" style="width:700px">
 </p><br/>
   در ادامه سایز تصویر به صورت طول و عرض دریافت شده و با استفاده از تابع randi مربعی 50 در 50 به صورت تصادفی در موقعیتی از تصویر ایجاد گردیده است
 </div><br/>
