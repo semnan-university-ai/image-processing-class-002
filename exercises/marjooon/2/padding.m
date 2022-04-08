@@ -1,0 +1,10 @@
+clc;
+clear;
+close all;
+image1=imread('lena.png');
+image2=rgb2gray(image1);
+image_size  = size(image2);
+figure, imshow(image2);
+padd = zeros(image_size);
+padd = padarray(image2,[10 10],'replicate','both');
+figure, imshow(padd);
