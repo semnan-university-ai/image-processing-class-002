@@ -17,7 +17,7 @@ img =rgb2gray(img);
 figure,imshow(img);
 ```
 <div dir="rtl">
-  خروجی برنامه فوق : 
+  تصویر اصلی ورودی : 
   
  <br/>
   <p align="center">
