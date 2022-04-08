@@ -1,5 +1,6 @@
 
 
+
 clc;
 clear;
 close all;
@@ -18,4 +19,3 @@ EydImageDB{9}=imread('9.jpg');
 EydImageDB{10}=imread('10.jpg');
 EydImageDB{11}=imread('11.jpg');
 EydImageDB{12}=imread('12.jpg');
-
