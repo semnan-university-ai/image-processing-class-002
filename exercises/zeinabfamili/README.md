@@ -6,7 +6,7 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
+* Full name : zeinab famili
 * github id : ---
-* Email : ---
+* Email :zeinab.famili@gmail.com
 * Type : ---
