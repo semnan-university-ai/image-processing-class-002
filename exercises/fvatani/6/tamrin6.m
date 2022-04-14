@@ -6,7 +6,7 @@ image=imread('pears.png');
 image=rgb2gray(image); 
 p=1;
 pad=uint8(zeros(size(image)+2*p));  
-result_image=uint8(zeros(size(image,1),size(image,2)));  
+result_image=uint8(zeros(size(image)));  
 
 for x=1:size(image,1)
      for y=1:size(image,2)
