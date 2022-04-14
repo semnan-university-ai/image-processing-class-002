@@ -64,3 +64,18 @@
 </div><hr/>
 
 
+
+<div dir="rtl" align="justify">
+  <table>
+ <tr>
+   <td>شماره ی 5</td>
+   <td>Hard Hat Workers Dataset</td>
+ </tr>
+  <tr>
+    <td>لینک دسترسی</td>
+    <td><a href="https://public.roboflow.com/object-detection/hard-hat-workers/">لینک</a></td>
+  </tr>
+</table> 
+  با استفاده از این دیتاست میتوان تشخصی داد که ابا کلاه ایمنی بر روی سر کارگران وجود دارد با  خیر در حقیقت در این دیتاست تعداد 7041 تصویر مختلف از کلاه های ایمنی قرار داده شده این کلاه های ایمنی بر روی سر کارگران مختلف قرار داده شده و تصویر هایی آماده شده اند
+</div><hr/>
+
