@@ -16,7 +16,6 @@ end
 
 for x=1:size(result_image,1)
      for y=1:size(result_image,2)
-            sum = 0;
             result = 0;
             
             result = sqrt(double(pad(x+p,y)))+ sqrt(double(pad(x,y+p)))+ sqrt(double(pad(x+p+1,y+p)))+ sqrt(double(pad(x+p,y+p+1)));
