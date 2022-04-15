@@ -3,7 +3,7 @@ close
 clear
 im=imread('lena.png');
 im=rgb2gray(im);
-im_center=[size(im,1)/2,size(im,1)/2];
+im_center=[size(im,1)/2,size(im,2)/2];
 r_circle=5000;
     for i=1:size(im,1)
         for j=1:size(im,2)
