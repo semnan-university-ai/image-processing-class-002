@@ -9,6 +9,7 @@ image1=imread('sails.png');
 image2=rgb2gray(image1);
 figure,imshow(image2);
 ```
+![pad](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/benchmark/sails.png)
 ##### در این قسمت یک تصویر جدید با مقادیر صفر می سازیم که تعداد سطر و ستون انها 2 واحد از سطر و ستون تصویر اصلی بیشتر است.
 ```
 [m,n]=size(image2);
@@ -26,3 +27,4 @@ image3(2:end-1,end)=image2(1:end,end);
 ```
 figure, imshow(uint8 (image3));
 ```
+
