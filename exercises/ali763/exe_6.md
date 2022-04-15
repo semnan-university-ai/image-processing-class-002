@@ -20,7 +20,7 @@ image = double(image);
 ```
 imshow(uint8(image))
 ```
-تصویر خروجی :
+تصویر خروجی(باید توجه داشت حواشی تصویر به دلیل نوع padding آن به شکل زیر باقی مانده است).
 <br>
 ![image](https://user-images.githubusercontent.com/56272972/163623642-cf07da7d-2f9f-44f3-a80e-257b1887b8f9.png)
 
