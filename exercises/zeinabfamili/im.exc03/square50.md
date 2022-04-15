@@ -34,5 +34,5 @@ end
 image3=image2;
 figure,imshow(image3);
 ```
-![squ](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc03/fig1.3.png)
+![squ](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc03/fig2.3.png)
 
