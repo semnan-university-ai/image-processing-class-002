@@ -8,4 +8,4 @@ clear;
 image1= rand(1000,1000);
 imshow(image1);
 ```
-![gpa](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/benchmark/airplane.png)
+![rand](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc08/fig1.8.png)
