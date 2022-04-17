@@ -179,14 +179,14 @@ filter_med_avg('12.jpg');
 <br/>
 نتایج را به ازای 3 تصوير از بين 12 تصویر در ادامه خواهیم داشت .
 
-#### نتيجه تصوير اول
-![Result]()
+#### نتيجه تصوير دوم
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/13/Result-img2.PNG)
 <br/>
 
 #### نتيجه تصوير نهم
-![Result]()
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/13/Result-img9.PNG)
 <br/>
 
 #### نتيجه تصوير دوازدهم
-![Result]()
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/13/Result-img12.PNG)
 <br/>
