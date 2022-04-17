@@ -122,7 +122,6 @@ subplot(224);imshow(avg);title('mean');
 clc;
 close all;
 clear;
-
 img = imread("1.jpg");
 img = im2gray(img);
 ```
