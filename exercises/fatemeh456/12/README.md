@@ -162,74 +162,61 @@ histequal('12.jpg');
 <br/>
 نتایج را به ازای هر 12 تصویر سفره هفت سین در ادامه خواهیم داشت .
 <br/>
-- تصوير اول 
+#### تصوير اول 
 
-<br/>
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(1).PNG)
 <br/>
 
-
-- تصوير دوم
-<br/>
+#### تصوير دوم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(2).PNG)
 <br/>
 
 
-- تصوير سوم
-<br/>
+#### تصوير سوم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(3).PNG)
 <br/>
 
 
-- تصوير چهارم
-<br/>
+#### تصوير چهارم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(4).PNG)
 <br/>
 
 
-- تصوير پنجم
-<br/>
+#### تصوير پنجم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(5).PNG)
 <br/>
 
 
-- تصوير ششم
-<br/>
+#### تصوير ششم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(6).PNG)
 <br/>
 
 
-- تصوير هفتم
-<br/>
+#### تصوير هفتم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(7).PNG)
 <br/>
 
 
-- تصوير هشتم
-<br/>
+#### تصوير هشتم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(8).PNG)
 <br/>
 
 
-- تصوير نهم
-<br/>
+#### تصوير نهم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(9).PNG)
 <br/>
 
 
-- تصوير دهم
-<br/>
+#### تصوير دهم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(10).PNG)
 <br/>
 
 
-- تصوير يازدهم
-<br/>
+#### تصوير يازدهم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(11).PNG)
 <br/>
 
 
-- تصوير دوازدهم
-<br/>
+#### تصوير دوازدهم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(12).PNG)
 <br/>
