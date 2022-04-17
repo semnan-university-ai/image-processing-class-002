@@ -14,7 +14,7 @@ imshow(image2);
 ![crl](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc11/fig1.11.png)
 ##### برای رسم دایره بایستی مرکز و شعاع آنرا مشخص کنیم. شعاع آن را 50 و مرکز ان را مرکز تصویر در نظر گرفتیم. حال زاویه الفا را از 0 تا 360 تعریف میکنیم.
 ##### بعد از اان rcos(alfa) را با مختصات x مرکز دایره و rsin(alfa) را با مختصات y مرکز دایره جمع می کنیم. دایره با گام های 0.01 متغییراست.
-###### در نهایت با دستور plot دایره ای قرمز با عرض خط 2 رسم می کنیم.
+###### در نهایت با دستور plot دایره ای قرمز با پهنای خط 2 رسم می کنیم.
 ```
 r=100;
 xc = m/2;
@@ -26,4 +26,4 @@ y = yc + sin(alfa)' *r;
 plot(x,y,'r','LineWidth',2)
 ```
 ##### رسم دایره روی تصویر در شکل زیر نمایش داده شده است. دقت شود در اینحا از دستور figure استفاده نشده است.
-![crl](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/benchmark/airplane.png)
+![crl](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc11/fig2.11.fig)
