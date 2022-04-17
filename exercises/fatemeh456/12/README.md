@@ -162,7 +162,6 @@ histequal('12.jpg');
 <br/>
 نتایج را به ازای هر 12 تصویر سفره هفت سین در ادامه خواهیم داشت .
 <br/>
-#### تصوير اول 
 <br/>
 ![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/1.jpg)
 ![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img1.jpg)
