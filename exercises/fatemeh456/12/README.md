@@ -161,62 +161,63 @@ histequal('12.jpg');
 حال با اجراي آن خواهيم ديد به ازاي تمامي 12 تصوير سفره هفت سين ، هموار سازي يا بهينه سازي هيستوگرام انجام مي شود .
 <br/>
 نتایج را به ازای هر 12 تصویر سفره هفت سین در ادامه خواهیم داشت .
+<br/>
 ####Image 1
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/1.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img1.jpg)
 <br/>
 
 ####Image 2
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/2.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img2.jpg)
 <br/>
 
 ####Image 3
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/3.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img3.jpg)
 <br/>
 
 ####Image 4
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/4.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img4.jpg)
 <br/>
 
 ####Image 5
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/5.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img5.jpg)
 <br/>
 
 ####Image 6
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/6.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img6.jpg)
 <br/>
 
 ####Image 7
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/7.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img7.jpg)
 <br/>
 
 ####Image 8
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/8.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img8.jpg)
 <br/>
 
 ####Image 9
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/9.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img9.jpg)
 <br/>
 
 ####Image 10
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/10.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img10.jpg)
 <br/>
 
 ####Image 11
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/11.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img11.jpg)
 <br/>
 
 ####Image 12
-![Original]()
-![Equalized]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/12.jpg)
+![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img12.jpg)
 <br/>
