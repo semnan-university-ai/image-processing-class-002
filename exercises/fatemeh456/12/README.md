@@ -165,83 +165,71 @@ histequal('12.jpg');
 - تصوير اول 
 
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/1.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img1.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(1).PNG)
 <br/>
 
 
 - تصوير دوم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/2.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img2.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(2).PNG)
 <br/>
 
 
 - تصوير سوم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/3.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img3.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(3).PNG)
 <br/>
 
 
 - تصوير چهارم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/4.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img4.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(4).PNG)
 <br/>
 
 
 - تصوير پنجم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/5.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img5.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(5).PNG)
 <br/>
 
 
 - تصوير ششم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/6.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img6.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(6).PNG)
 <br/>
 
 
 - تصوير هفتم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/7.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img7.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(7).PNG)
 <br/>
 
 
 - تصوير هشتم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/8.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img8.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(8).PNG)
 <br/>
 
 
 - تصوير نهم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/9.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img9.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(9).PNG)
 <br/>
 
 
 - تصوير دهم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/10.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img10.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(10).PNG)
 <br/>
 
 
 - تصوير يازدهم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/11.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img11.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(11).PNG)
 <br/>
 
 
 - تصوير دوازدهم
 <br/>
-![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/12.jpg)
-![Equalized](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Equal_img12.jpg)
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(12).PNG)
 <br/>
