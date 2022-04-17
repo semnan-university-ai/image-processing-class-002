@@ -26,4 +26,4 @@ y = yc + sin(alfa)' *r;
 plot(x,y,'r','LineWidth',2)
 ```
 ##### رسم دایره روی تصویر در شکل زیر نمایش داده شده است. دقت شود در اینحا از دستور figure استفاده نشده است.
-![crl](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc11/fig2.11.fig)
+![crl](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc11/fig2.11.png)
