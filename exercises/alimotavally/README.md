@@ -6,7 +6,8 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
-* github id : ---
-* Email : ---
-* Type : ---
+* Full name : seyed ali motavalli
+* github id : alimotavally
+* Email : s.ali.motavally@gmail.com
+* Type : roozane-1400
+

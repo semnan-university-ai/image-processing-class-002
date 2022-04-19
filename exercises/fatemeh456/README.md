@@ -6,7 +6,7 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
-* github id : ---
-* Email : ---
-* Type : ---
+* Full name : Fatemeh Arghavan
+* github id : [@fatemeh456](https://github.com/fatemeh456)
+* Email : f.arghavan1375@gmail.com
+* Type : Roozane
