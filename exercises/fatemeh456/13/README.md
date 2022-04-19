@@ -189,3 +189,106 @@ filter_med_avg('12.jpg');
 #### نتيجه تصوير دوازدهم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/13/Result-img12.PNG)
 <br/>
+<br/>
+<br/>
+اما اگر بخواهیم به جاي استفاده از فيلترها به صورت آماده از توابع دست نويس آن ها استفاده کنیم چه کار کنیم ؟
+<br/>
+براي نمونه براي فيلتر ميانه نشان مي دهيم .
+<br/>
+ابتدا تابع ميانه را كه در كلاس حل تمرين با جزئيات آن آشنا شديم مي نويسيم.
+<br/>
+تابع میانه :
+```
+function median_result = median(image)
+
+    image = imread(image);
+    image = im2gray(image);
+    img1 = image;
+    img2 = img1;
+
+    median_number = [];
+    new_value = 0;
+
+    [x_img y_img] = size(img1);
+
+    pixels = zeros(x_img, y_img);
+
+    for i = 1:x_img
+       for j= 1:y_img
+        pixels(i, j) = img1(i, j);
+       end
+    end
+
+    for i = 1:x_img
+       for j= 1:y_img
+           if(i == 1 && j == 1)
+               median_number = [pixels(i, j) pixels(i, j+1) pixels(i+1, j) pixels(i+1, j+1)];
+               median_number = sort(median_number);
+               new_value = median_number(2);
+           elseif(i == x_img && j == 1)
+               median_number = [pixels(i-1, j) pixels(i-1, j+1) pixels(i, j) pixels(i-1, j+1)];
+               median_number = sort(median_number);
+               new_value = median_number(2);
+           elseif(i == 1 && j == y_img)
+               median_number = [pixels(i, j-1) pixels(i, j) pixels(i+1, j-1) pixels(i+1, j)];
+               median_number = sort(median_number);
+               new_value = median_number(2);
+           elseif(i == x_img && j == y_img)
+               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i, j-1) pixels(i, j)];
+               median_number = sort(median_number);
+               new_value = median_number(2);
+           elseif(i == 1)
+               median_number = [pixels(i, j-1) pixels(i, j) pixels(i, j+1) pixels(i+1, j-1) pixels(i+1, j) pixels(i+1, j+1)];
+               median_number = sort(median_number);
+               new_value = median_number(3);
+           elseif(i == x_img)
+               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i-1, j+1) pixels(i, j-1) pixels(i, j) pixels(i-1, j+1)];
+               median_number = sort(median_number);
+               new_value = median_number(3);
+           elseif(j == 1)
+               median_number = [pixels(i-1, j) pixels(i-1, j+1) pixels(i, j) pixels(i-1, j+1) pixels(i+1, j) pixels(i+1, j+1)];
+               median_number = sort(median_number);
+               new_value = median_number(3);
+           elseif(j == y_img)
+               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i, j-1) pixels(i, j) pixels(i+1, j-1) pixels(i+1, j)];
+               median_number = sort(median_number);
+               new_value = median_number(3);
+           else
+               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i-1, j+1) pixels(i, j-1) pixels(i, j) pixels(i-1, j+1) pixels(i+1, j-1) pixels(i+1, j) pixels(i+1, j+1)];
+               median_number = sort(median_number);
+               new_value = median_number(4);
+           end
+
+           img2(i, j) = new_value;
+           new_value = 0;
+       end
+    end
+    
+    median_result = img2;
+
+end
+
+```
+سپس برای اعمال اين فیلتر بر روی تصاویر داریم :
+```
+clc;
+close all;
+clear;
+
+%median
+t = tiledlayout('flow');
+nexttile;imshow(median('1.jpg'));title('median 1');
+nexttile;imshow(median('2.jpg'));title('median 2');
+nexttile;imshow(median('3.jpg'));title('median 3');
+nexttile;imshow(median('4.jpg'));title('median 4');
+nexttile;imshow(median('5.jpg'));title('median 5');
+nexttile;imshow(median('6.jpg'));title('median 6');
+nexttile;imshow(median('7.jpg'));title('median 7');
+nexttile;imshow(median('8.jpg'));title('median 8');
+nexttile;imshow(median('9.jpg'));title('median 9');
+nexttile;imshow(median('10.jpg'));title('median 10');
+nexttile;imshow(median('11.jpg'));title('median 11');
+nexttile;imshow(median('12.jpg'));title('median 12');
+```
+در هر کدام خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد .
+![Result2]()
