@@ -20,4 +20,14 @@ subplot(1,2,1);imshow(image2);
 subplot(1,2,2);imshow(image3);
 ```
 ##### در ادمه 10 تصویر سفره هفت سین با تصویر هموار ساز شده را اورده ام.
-![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/benchmark/airplane.png)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic1.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic2.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic3.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic4.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic5.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic6.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic7.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic10.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic11.jpg)
+![hist](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc12/histpic12.jpg)
+
