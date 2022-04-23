@@ -7,6 +7,6 @@ image processing class - 002
 
 ### Student Info :
 * Full name : zeinab famili
-* github id : ---
+* github id : zeinabfamili
 * Email :zeinab.famili@gmail.com
 * Type : ---
