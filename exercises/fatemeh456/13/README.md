@@ -253,7 +253,7 @@ clc;
 close all;
 clear;
 
-%median
+%mean
 t = tiledlayout('flow');
 nexttile;imshow(mean('1.jpg'));title('median 1');
 nexttile;imshow(mean('2.jpg'));title('median 2');
