@@ -196,10 +196,10 @@ filter_med_avg('12.jpg');
 ابتدا تابع ميانگين را مي نويسيم.
 <br/>
 <br/>
- تابع ميانگين :
+### تابع ميانگين :
 <br/>
 ابتدا تصوير را خوانده و خاكستري مي كنيم و سايز تصوير را در ماتريسي نگه مي داريم .
-``
+```
 function medianFilter = mean(image)
 image = imread(image);
 image = rgb2gray(image);
