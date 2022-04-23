@@ -291,5 +291,5 @@ nexttile;imshow(median('10.jpg'));title('median 10');
 nexttile;imshow(median('11.jpg'));title('median 11');
 nexttile;imshow(median('12.jpg'));title('median 12');
 ```
-در هر کدام خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد .
+در هر کدام خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد.
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/13/Result.png)
