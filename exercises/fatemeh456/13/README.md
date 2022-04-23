@@ -200,7 +200,7 @@ filter_med_avg('12.jpg');
 
 ابتدا تصوير را خوانده و خاكستري مي كنيم و سايز تصوير را در ماتريسي نگه مي داريم .
 ```
-function medianFilter = mean(image)
+function meanFilter = mean(image)
 image = imread(image);
 image = rgb2gray(image);
 [x y] = size(image);
