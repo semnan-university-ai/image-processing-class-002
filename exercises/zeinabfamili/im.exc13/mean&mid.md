@@ -35,5 +35,7 @@ for i= 4 : m-3
     end
 end 
 ```
-##### در نهایت برای نمایش تصویر اصلی و تصویر میانگین گیری شده از دستور figure  استفاده میکنیم.
-![mean](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/benchmark/airplane.png)
+##### در نهایت برای نمایش تصویر اصلی و تصویر میانگین گیری شده از دستور figure  استفاده میکنیم. تصاویر 2و 5و 7و 10 و12 را فیلتر زده و نمایش دادیم.
+
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig2.13.jpg)
+
