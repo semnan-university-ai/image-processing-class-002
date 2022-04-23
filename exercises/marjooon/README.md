@@ -6,7 +6,7 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
-* github id : ---
-* Email : ---
+* Full name : Marjan Abbasi
+* github id : Marjooon
+* Email : m.abbasizahed@gmail.com
 * Type : ---
