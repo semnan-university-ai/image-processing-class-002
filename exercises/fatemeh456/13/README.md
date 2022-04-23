@@ -255,20 +255,71 @@ clear;
 
 %mean
 t = tiledlayout('flow');
-nexttile;imshow(mean('1.jpg'));title('median 1');
-nexttile;imshow(mean('2.jpg'));title('median 2');
-nexttile;imshow(mean('3.jpg'));title('median 3');
-nexttile;imshow(mean('4.jpg'));title('median 4');
-nexttile;imshow(mean('5.jpg'));title('median 5');
-nexttile;imshow(mean('6.jpg'));title('median 6');
-nexttile;imshow(mean('7.jpg'));title('median 7');
-nexttile;imshow(mean('8.jpg'));title('median 8');
-nexttile;imshow(mean('9.jpg'));title('median 9');
-nexttile;imshow(mean('10.jpg'));title('median 10');
-nexttile;imshow(mean('11.jpg'));title('median 11');
-nexttile;imshow(mean('12.jpg'));title('median 12');
+nexttile;imshow(mean('1.jpg'));title('mean 1');
+nexttile;imshow(mean('2.jpg'));title('mean 2');
+nexttile;imshow(mean('3.jpg'));title('mean 3');
+nexttile;imshow(mean('4.jpg'));title('mean 4');
+nexttile;imshow(mean('5.jpg'));title('mean 5');
+nexttile;imshow(mean('6.jpg'));title('mean 6');
+nexttile;imshow(mean('7.jpg'));title('mean 7');
+nexttile;imshow(mean('8.jpg'));title('mean 8');
+nexttile;imshow(mean('9.jpg'));title('mean 9');
+nexttile;imshow(mean('10.jpg'));title('mean 10');
+nexttile;imshow(mean('11.jpg'));title('mean 11');
+nexttile;imshow(mean('12.jpg'));title('mean 12');
 ```
 خواهيم ديد خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد.
 
 ### تابع ميانه :
+ابتدا براي اعمال فيلتر 7 در 7 نيازمند padding هستيم . با توجه به سايز فيلتر، نياز به 6 لايه pad در اطراف تصوير هستيم به عبارت بهتر در هر طرف 3 لايه ، تعداد لايه اي كه بايد در هر طرف تصوير اضافه شود را متغير pad نگه داشته ايم.
+```
+function medianFilter = median(image)
+window_size = 7
+pad = (window_size - 1)/2;
+```
+در ادامه تصوير را خوانده ، خاكستري كرده و يك كپي از آن را نگه مي داريم تا نتايج نهايي در آن تاثير داده شود .
+<br/>
+در ادامه سايز اصوير را نيز در ماتريسي ذخيره مي كنيم .
+```
+image = imread(image);
+image = rgb2gray(image);
+Result_image = image;
+[x y]=size(image);
+```
+حال براي اعمال اين فيلتر بر روي تصوير كافيست حلقه for زير را اجرا نماييم .
+<br/>
+در اين حلقه كه بر روي تصوير اصلي اعمال ميشود (لايه هاي اضافه شده را كاري نداريم) هر بار مقدار هر پيكسل و 48 همسايه اطراف آن در متغير mat دخيره شده سپس آن را sort مي كنيم و ميانه آن ها را بعنوان مقدار جديد پيكسل در تصوير نتيجه قرار مي دهيم .
+```
+for i=1+pad:x-pad
+    for j=1+pad:y-pad
+        mat = image(i-pad:i+pad, j-pad:j+pad);
+        mat = sort(mat(:));
+        Result_image(i,j)= mat((end-1)/2);
+    end
+end
+```
+در نهايت تصوير نتيجه را نمايش مي دهيم .
+```
+figure;imshow(Result_image);
+```
+براي فراخواني اين تابع، كافيست كد اين تابع را با نام خود تابع ذخيره كرده سپس در محيط كد جديدي بنويسيم:
+```
+clc;
+clear all;
+close all;
 
+%median
+t = tiledlayout('flow');
+nexttile;imshow(mediann('1.jpg'));title('median 1');
+nexttile;imshow(mediann('2.jpg'));title('median 2');
+nexttile;imshow(mediann('3.jpg'));title('median 3');
+nexttile;imshow(mediann('4.jpg'));title('median 4');
+nexttile;imshow(mediann('5.jpg'));title('median 5');
+nexttile;imshow(mediann('6.jpg'));title('median 6');
+nexttile;imshow(mediann('7.jpg'));title('median 7');
+nexttile;imshow(mediann('8.jpg'));title('median 8');
+nexttile;imshow(mediann('9.jpg'));title('median 9');
+nexttile;imshow(mediann('10.jpg'));title('median 10');
+nexttile;imshow(mediann('11.jpg'));title('median 11');
+nexttile;imshow(mediann('12.jpg'));title('median 12');
+```
