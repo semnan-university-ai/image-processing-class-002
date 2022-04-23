@@ -268,5 +268,4 @@ nexttile;imshow(mean('10.jpg'));title('median 10');
 nexttile;imshow(mean('11.jpg'));title('median 11');
 nexttile;imshow(mean('12.jpg'));title('median 12');
 ```
-در هر کدام خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد.
-![Result]()
+خواهيم ديد خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد.
