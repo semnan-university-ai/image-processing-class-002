@@ -222,7 +222,7 @@ for i=1+pad:x-pad
     for j=1+pad:y-pad
         mat = image(i-pad:i+pad, j-pad:j+pad);
         mat = sum(mat(:));
-        Result_image(i,j)= mat/49;
+        Result_image(i,j)= ceil(mat/49);
     end
 end
 ```
