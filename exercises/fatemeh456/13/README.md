@@ -269,3 +269,6 @@ nexttile;imshow(mean('11.jpg'));title('median 11');
 nexttile;imshow(mean('12.jpg'));title('median 12');
 ```
 خواهيم ديد خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد.
+
+### تابع ميانگين :
+
