@@ -220,3 +220,89 @@ histequal('12.jpg');
 #### تصوير دوازدهم
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Result/Result%20(12).PNG)
 <br/>
+
+اما اگر نخواهیم از تابع هموارسازی به صورت مستقیم استفاده کنیم و عملیات درون آن را خودمان بنویسیم کافیست به صورت زیر عمل کنیم:
+<br/>
+در ابتدا چون قرار است بر روی 12 تصویر این عمل انجام شود منطقی است که آن را در قالب تابعی نوشته تا هر بار با تغییر ورودی تابع، نتایج مختلف حاصل شود.
+<br/>
+در ادامه همانطور که در کد مشخص است تصویر را خوانده، خاکستری کرده سپس سایز آن را در دو متغیر rows وcolumns نگه می داریم .
+```
+function histeqResult = histogrameq(image)
+image = imread(image);
+image = rgb2gray(image);
+[rows columns] = size(image);
+```
+حال قبل از شروع کار به صورت رسمی کافیست یک سری متغیرهایی را تعریف کنیم تا مقادیر محاسبه شده در طی این فرایند در آن ها دخیره شود.
+<br/>
+متغیر اول ، Final Result است که تصویر نهایی ما در آن شکل خواهد گرفت که در ابتدای کار ماتریسی به ابعاد تصویر اولیه با مقادیر صفر می سازد نوع آن را unit 8 قرار دادیم که اعداد صحیح باشند.
+<br/>
+متغیر دوم ، Pixel Number است که تعداد پیکسل های تصویر را در آن نگه می داریم.
+<br/>
+متغیرهای بعدی ، frequncy و pdf و cdf و cummlative و outpic هستند که همانطور که مشخص است حین انجام محاسبات به کار می آیند و در ابتدای کار آن ها را بصورت ماتریس هایی با یک ستون و 256 سطر معرفی می کنیم که نشانگر مقادیر 0 تا 255 پیکسل های تصویر است . 
+<br/>
+```
+finalResult = uint8(zeros(rows,columns));
+pixelNumber = rows*columns;
+frequncy = zeros(256,1);
+pdf = zeros(256,1);
+cdf = zeros(256,1);
+cummlative = zeros(256,1);
+outpic = zeros(256,1);
+```
+در ادامه حلقه for ای را تعریف می کنیم که این حلقه بر روی کل تصویر حرکت کرده و فرکانس مقادیر 0 تا 255 را محاسبه می کند و نتایج را در ماتریس frequncy دخیره می کند. سپس هر مقدار را تقسیم بر تعداد کل پیکسل های تصویر کرده و تابع توزیع احتمالی را به دست می آورد و در ماتریس pdf ذخیره می کند.
+```
+for i = 1:1:rows
+    for j = 1:1:columns
+        val = image(i,j);
+        frequncy(val+1) = frequncy(val+1)+1;
+        pdf(val+1) = frequncy(val+1)/pixelNumber;
+    end
+end
+```
+پس از این مرحله، نیاز است روی ماتریس pdf حرکت کرده و تابع تجمعی را به ازای تمامی مقادیر 0 تا 255 به دست آوریم .
+<br/>
+لازم به ذکر است که متغیر Intensity Level در واقع همان مقدار 255 ای است که اگر فرمول هموار سازی را بخاطر بیاورید به ازای هر مقدار، یک ضرب در 255 داشتیم که این 255 همان Intensity Level ماست .
+```
+sum =0 ;
+intensityLevel = 255;
+
+for i = 1:1:size(pdf)
+    sum = sum + frequncy(i);
+    cummlative(i) = sum;
+    cdf(i) = cummlative(i)/ pixelNumber;
+    outpic(i) = round(cdf(i) * intensityLevel);
+end
+```
+مقادیر جدید هر پیکسل در ماتریس outpic است که حالا به کمکیک حلقه for می آییم و مقادیر را در تصویر نتیجه خود قرار می دهیم .
+```
+for i = 1:1:rows
+    for j = 1:1:columns
+        finalResult(i,j) = outpic(image(i,j) + 1);
+    end
+end
+```
+و در نهایت خروجی را تصویر خروجی را که در متغیر Final Result است نمایش می دهیم . اگر نتایج را با نتایج حاصل از تابع histeq مقایسه کنیم خواهیم دید که هیچ تفاوتی با هم ندارند.
+```
+imshow(finalResult);
+```
+در نهايت با استفاده از اين تابع به صورت زير، نتايج هموارسازي 12 تصوير سفره هفت سين را خواهيم ديد .
+```
+clc;
+close all;
+clear;
+
+t = tiledlayout('flow');
+nexttile;histogrameq('1.jpg');title('Picture 1');
+nexttile;histogrameq('2.jpg');title('Picture 2');
+nexttile;histogrameq('3.jpg');title('Picture 3');
+nexttile;histogrameq('4.jpg');title('Picture 4');
+nexttile;histogrameq('5.jpg');title('Picture 5');
+nexttile;histogrameq('6.jpg');title('Picture 6');
+nexttile;histogrameq('7.jpg');title('Picture 7');
+nexttile;histogrameq('8.jpg');title('Picture 8');
+nexttile;histogrameq('9.jpg');title('Picture 9');
+nexttile;histogrameq('10.jpg');title('Picture 10');
+nexttile;histogrameq('11.jpg');title('Picture 11');
+nexttile;histogrameq('12.jpg');title('Picture 12');
+```
+![ManualResult]()
