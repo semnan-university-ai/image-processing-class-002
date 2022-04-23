@@ -9,4 +9,4 @@ image processing class - 002
 * Full name : Atefeh Khosravani
 * github id : [@AtiKhosravani](https://github.com/AtiKhosravani)
 * Email : A.khosravani94@gmail.com
-* Type : ---
+* Type : Master of AI student
