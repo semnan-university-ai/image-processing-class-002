@@ -198,90 +198,51 @@ filter_med_avg('12.jpg');
 <br/>
 ### تابع ميانگين :
 
-ابتدا تصوير را خوانده و خاكستري مي كنيم و سايز تصوير را در ماتريسي نگه مي داريم .
+ابتدا براي اعمال فيلتر 7 در 7 نيازمند padding هستيم . با توجه به سايز فيلتر، نياز به 6 لايه pad در اطراف تصوير هستيم به عبارت بهتر در هر طرف 3 لايه ، تعداد لايه اي كه بايد در هر طرف تصوير اضافه شود را متغير pad نگه داشته ايم.
 ```
-function meanFilter = mean(image)
-image = imread(image);
+window_size = 7
+pad = (window_size - 1)/2;
+```
+
+در ادامه تصوير را خوانده ، خاكستري كرده و يك كپي از آن را نگه مي داريم تا نتايج نهايي در آن تاثير داده شود .
+<br/>
+در ادامه سايز تصوير را نيز در ماتريسي ذخيره مي كنيم .
+```
+image = imread('1.jpg');
 image = rgb2gray(image);
-[x y] = size(image);
+Result_image = image;
+[x y]=size(image);
+
 ```
-سپس چون قرار است فيلتر 7 * 7 را بر روي تصاوير اعمال كنيم بايد 6 لايه در اطراف تصوير به كمك padding انجام شود. بنابراين تصوير جديدي به ابعاد تصوير اوليه + 3 لايه مازاد در هر طرف تصوير ايجاد مي كنيم كه مقادير موجود در pad ، صفر است.
+حال براي اعمال اين فيلتر بر روي تصوير كافيست حلقه for زير را اجرا نماييم .
+<br/>
+در اين حلقه كه بر روي تصوير اصلي اعمال ميشود (لايه هاي اضافه شده را كاري نداريم) هر بار مقدار هر پيكسل و 48 همسايه اطراف آن در متغير mat دخيره شده سپس همه آن ها را با هم جمع كرده و تقسيم بر 49 مي كنيم و سقف آن را بعنوان مقدار جديد پيكسل در تصوير نتيجه قرار مي دهيم .
 ```
-NewImage = zeros(x+6,y+6)
-```
-ساير مقادير را از تصوير اصلي به تصوير جديد منتقل مي كنيم و سايز تصوير جديد را نگه مي داريم.
-```
-NewImage(4:end-3,4:end-3) = image;
-[z w] = size(NewImage);
-```
-حال بايد فيلتر 7 در 7 خود را تعريف ما آن را در قالب يك ماتريس 7 در 7 با مقادير 1 ميسازيم چون قرار است همه همسايه هاي در ابعاد 7 * 7 خود را تاثير دهد .
-```
-filter = ones(7,7);
-```
-براي ذخيره نتايج اصلي ResultImage را معرفي كيديم و ابعادي برابر تصوير اصلي به آن داديم.
-```
-ResultImage = zeros(x,y);
-```
-حال به قسمت اصلي برنامه رسيديم كه قرار است مقدار هر پيكسل از ميانگين همسايه هاي موجود در ابعاد 7 * 7 آن پيكسل به دست آيد. دقت شود كه تصوير اصلي ما از ستون 4 تا w - 3 و سطر 4 تا z - 3 قرار دارد بنابراين داريم :
-```
-for i= 4 : z-3
-    for j= 4 : w-3
-        avg = 0 ;
-        for ii = 1 : 7
-            for jj = 1 : 7
-                sum = filter(ii,jj)*NewImage(i-4 + ii,j-4 + jj);
-                avg = avg + sum;
-            end           
-        end
-        ResultImage(i-3,j-3)= ceil(avg/49);
+for i=1+pad:x-pad
+    for j=1+pad:y-pad
+        mat = image(i-pad:i+pad, j-pad:j+pad);
+        mat = sum(mat(:));
+        Result_image(i,j)= mat/49;
     end
-end 
+end
 ```
-ماتريسي كه دو درايه a , b را دارا مي باشد در حكم فيلتر ماست كه بر روي تصوير در حال حركت است و مقادير ميانگين را در اين ابعاد محاسبه مي كند.
-<br/>
-تمام 48 همسايه هر پيكسل با هم جمع و تقسيم بر 49 (7 * 7 = 49) شده، سقف عدد در تصوير نتيجه قرار مي گيرد.
-<br/>
-در نهايت تصوير را نمايش مي دهيم .
+در نهايت تصوير نتيجه را نمايش مي دهيم .
 ```
-imshow(ResultImage)
+imshow(Result_image)
 ```
-
-
-سپس برای اعمال اين فیلتر بر روی تصاویر داریم :
-```
-clc;
-close all;
-clear;
-
-%mean
-t = tiledlayout('flow');
-nexttile;imshow(mean('1.jpg'));title('mean 1');
-nexttile;imshow(mean('2.jpg'));title('mean 2');
-nexttile;imshow(mean('3.jpg'));title('mean 3');
-nexttile;imshow(mean('4.jpg'));title('mean 4');
-nexttile;imshow(mean('5.jpg'));title('mean 5');
-nexttile;imshow(mean('6.jpg'));title('mean 6');
-nexttile;imshow(mean('7.jpg'));title('mean 7');
-nexttile;imshow(mean('8.jpg'));title('mean 8');
-nexttile;imshow(mean('9.jpg'));title('mean 9');
-nexttile;imshow(mean('10.jpg'));title('mean 10');
-nexttile;imshow(mean('11.jpg'));title('mean 11');
-nexttile;imshow(mean('12.jpg'));title('mean 12');
-```
-خواهيم ديد خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد.
+چنانچه به ازاي تك تك 12 تصوير اين كد را اجرا كنيم خواهيم ديد كه نتايج مشابه نتايج حاصل از تابع مستقيم آن است . 
 
 ### تابع ميانه :
 ابتدا براي اعمال فيلتر 7 در 7 نيازمند padding هستيم . با توجه به سايز فيلتر، نياز به 6 لايه pad در اطراف تصوير هستيم به عبارت بهتر در هر طرف 3 لايه ، تعداد لايه اي كه بايد در هر طرف تصوير اضافه شود را متغير pad نگه داشته ايم.
 ```
-function medianFilter = median(image)
 window_size = 7
 pad = (window_size - 1)/2;
 ```
 در ادامه تصوير را خوانده ، خاكستري كرده و يك كپي از آن را نگه مي داريم تا نتايج نهايي در آن تاثير داده شود .
 <br/>
-در ادامه سايز اصوير را نيز در ماتريسي ذخيره مي كنيم .
+در ادامه سايز تصوير را نيز در ماتريسي ذخيره مي كنيم .
 ```
-image = imread(image);
+image = imread('1.jpg');
 image = rgb2gray(image);
 Result_image = image;
 [x y]=size(image);
@@ -298,24 +259,8 @@ for i=1+pad:x-pad
     end
 end
 ```
-براي فراخواني اين تابع، كافيست كد اين تابع را با نام خود تابع ذخيره كرده سپس در محيط كد جديدي بنويسيم:
+در نهايت تصوير نتيجه را نمايش مي دهيم .
 ```
-clc;
-clear all;
-close all;
-
-%median
-t = tiledlayout('flow');
-nexttile;imshow(mediann('1.jpg'));title('median 1');
-nexttile;imshow(mediann('2.jpg'));title('median 2');
-nexttile;imshow(mediann('3.jpg'));title('median 3');
-nexttile;imshow(mediann('4.jpg'));title('median 4');
-nexttile;imshow(mediann('5.jpg'));title('median 5');
-nexttile;imshow(mediann('6.jpg'));title('median 6');
-nexttile;imshow(mediann('7.jpg'));title('median 7');
-nexttile;imshow(mediann('8.jpg'));title('median 8');
-nexttile;imshow(mediann('9.jpg'));title('median 9');
-nexttile;imshow(mediann('10.jpg'));title('median 10');
-nexttile;imshow(mediann('11.jpg'));title('median 11');
-nexttile;imshow(mediann('12.jpg'));title('median 12');
+imshow(Result_image)
 ```
+چنانچه به ازاي تك تك 12 تصوير اين كد را اجرا كنيم خواهيم ديد كه نتايج مشابه نتايج حاصل از تابع مستقيم آن است . 
