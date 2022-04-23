@@ -193,83 +193,60 @@ filter_med_avg('12.jpg');
 <br/>
 اما اگر بخواهیم به جاي استفاده از فيلترها به صورت آماده از توابع دست نويس آن ها استفاده کنیم چه کار کنیم ؟
 <br/>
-براي نمونه براي فيلتر ميانه نشان مي دهيم .
-<br/>
-ابتدا تابع ميانه را كه در كلاس حل تمرين با جزئيات آن آشنا شديم مي نويسيم.
+ابتدا تابع ميانگين را مي نويسيم.
 <br/>
 <br/>
-#### تابع میانه :
+#### تابع ميانگين :
+<br/>
+ابتدا تصوير را خوانده و خاكستري مي كنيم و سايز تصوير را در ماتريسي نگه مي داريم .
 ```
-function median_result = median(image)
-
-    image = imread(image);
-    image = im2gray(image);
-    img1 = image;
-    img2 = img1;
-
-    median_number = [];
-    new_value = 0;
-
-    [x_img y_img] = size(img1);
-
-    pixels = zeros(x_img, y_img);
-
-    for i = 1:x_img
-       for j= 1:y_img
-        pixels(i, j) = img1(i, j);
-       end
-    end
-
-    for i = 1:x_img
-       for j= 1:y_img
-           if(i == 1 && j == 1)
-               median_number = [pixels(i, j) pixels(i, j+1) pixels(i+1, j) pixels(i+1, j+1)];
-               median_number = sort(median_number);
-               new_value = median_number(2);
-           elseif(i == x_img && j == 1)
-               median_number = [pixels(i-1, j) pixels(i-1, j+1) pixels(i, j) pixels(i-1, j+1)];
-               median_number = sort(median_number);
-               new_value = median_number(2);
-           elseif(i == 1 && j == y_img)
-               median_number = [pixels(i, j-1) pixels(i, j) pixels(i+1, j-1) pixels(i+1, j)];
-               median_number = sort(median_number);
-               new_value = median_number(2);
-           elseif(i == x_img && j == y_img)
-               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i, j-1) pixels(i, j)];
-               median_number = sort(median_number);
-               new_value = median_number(2);
-           elseif(i == 1)
-               median_number = [pixels(i, j-1) pixels(i, j) pixels(i, j+1) pixels(i+1, j-1) pixels(i+1, j) pixels(i+1, j+1)];
-               median_number = sort(median_number);
-               new_value = median_number(3);
-           elseif(i == x_img)
-               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i-1, j+1) pixels(i, j-1) pixels(i, j) pixels(i-1, j+1)];
-               median_number = sort(median_number);
-               new_value = median_number(3);
-           elseif(j == 1)
-               median_number = [pixels(i-1, j) pixels(i-1, j+1) pixels(i, j) pixels(i-1, j+1) pixels(i+1, j) pixels(i+1, j+1)];
-               median_number = sort(median_number);
-               new_value = median_number(3);
-           elseif(j == y_img)
-               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i, j-1) pixels(i, j) pixels(i+1, j-1) pixels(i+1, j)];
-               median_number = sort(median_number);
-               new_value = median_number(3);
-           else
-               median_number = [pixels(i-1, j-1) pixels(i-1, j) pixels(i-1, j+1) pixels(i, j-1) pixels(i, j) pixels(i-1, j+1) pixels(i+1, j-1) pixels(i+1, j) pixels(i+1, j+1)];
-               median_number = sort(median_number);
-               new_value = median_number(4);
-           end
-
-           img2(i, j) = new_value;
-           new_value = 0;
-       end
-    end
-    
-    median_result = img2;
-
-end
-
+function medianFilter = mean(image)
+image = imread(image);
+image = rgb2gray(image);
+[x y] = size(image);
 ```
+سپس چون قرار است فيلتر 7 * 7 را بر روي تصاوير اعمال كنيم بايد 6 لايه در اطراف تصوير به كمك padding انجام شود. بنابراين تصوير جديدي به ابعاد تصوير اوليه + 6 لايه مازاد در هر طذف تصوير ايجاد مي كنيم كه مقادير موجود در pad ، صفر است.
+```
+NewImage = zeros(a+6,b+6);
+```
+ساير مقادير را از تصوير اصلي به تصوير جديد منتقل مي كنيم و سايز تصوير جديد را نگه مي داريم.
+```
+NewImage(4:x-3,4:y-3) = image;
+[z w] = size(NewImage);
+```
+حال بايد فيلتر 7 در 7 خود را تعريف ما آن را در قالب يك ماتريس 7 در 7 با مقادير 1 ميسازيم چون قرار است همه همسايه هاي در ابعاد 7 * 7 خود را تاثير دهد .
+```
+filter = ones(7,7);
+```
+براي ذخيره نتايج اصلي ResultImage را معرفي كيديم و ابعادي برابر تصوير اصلي به آن داديم.
+```
+ResultImage = zeros(a,b);
+```
+حال به قسمت اصلي برنامه رسيديم كه قرار است مقدار هر پيكسل از ميانگين همسايه هاي موجود در ابعاد 7 * 7 آن پيكسل به دست آيد. دقت شود كه تصوير اصلي ما از ستون 4 تا w - 3 و سطر 4 تا z - 3 قرار دارد بنابراين داريم :
+```
+for i= 4 : z-3
+    for j= 4 : w-3
+        avg = 0 ;
+        for a = 1 : 7
+            for b = 1 : 7
+                sum = matrix(a,b)*image2(i-4 + a,j-4 + b);
+                avg = avg + sum;
+            end           
+        end
+        ResultImage(i-3,j-3)= round(mi/49);
+    end
+end 
+```
+ماتريسي كه دو درايه a , b را دارا مي باشد در حكم فيلتر ماست كه بر روي تصوير در حال حركت است و مقادير ميانگين را در اين ابعاد محاسبه مي كند.
+<br/>
+تمام 48 همسايه هر پيكسل با هم جمع و تقسيم بر 49 (7 * 7 = 49) شده، عدد را رند كرده و در تصوير نتيجه قرار مي گيرد.
+<br/>
+در نهايت تصوير را نمايش مي دهيم .
+```
+imshow(ResultImage)
+```
+
+
 سپس برای اعمال اين فیلتر بر روی تصاویر داریم :
 ```
 clc;
@@ -278,18 +255,18 @@ clear;
 
 %median
 t = tiledlayout('flow');
-nexttile;imshow(median('1.jpg'));title('median 1');
-nexttile;imshow(median('2.jpg'));title('median 2');
-nexttile;imshow(median('3.jpg'));title('median 3');
-nexttile;imshow(median('4.jpg'));title('median 4');
-nexttile;imshow(median('5.jpg'));title('median 5');
-nexttile;imshow(median('6.jpg'));title('median 6');
-nexttile;imshow(median('7.jpg'));title('median 7');
-nexttile;imshow(median('8.jpg'));title('median 8');
-nexttile;imshow(median('9.jpg'));title('median 9');
-nexttile;imshow(median('10.jpg'));title('median 10');
-nexttile;imshow(median('11.jpg'));title('median 11');
-nexttile;imshow(median('12.jpg'));title('median 12');
+nexttile;imshow(mean('1.jpg'));title('median 1');
+nexttile;imshow(mean('2.jpg'));title('median 2');
+nexttile;imshow(mean('3.jpg'));title('median 3');
+nexttile;imshow(mean('4.jpg'));title('median 4');
+nexttile;imshow(mean('5.jpg'));title('median 5');
+nexttile;imshow(mean('6.jpg'));title('median 6');
+nexttile;imshow(mean('7.jpg'));title('median 7');
+nexttile;imshow(mean('8.jpg'));title('median 8');
+nexttile;imshow(mean('9.jpg'));title('median 9');
+nexttile;imshow(mean('10.jpg'));title('median 10');
+nexttile;imshow(mean('11.jpg'));title('median 11');
+nexttile;imshow(mean('12.jpg'));title('median 12');
 ```
 در هر کدام خروجی تمامی تصاویر در یک figure به نمایش در خواهد آمد.
-![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/13/Result.png)
+![Result]()
