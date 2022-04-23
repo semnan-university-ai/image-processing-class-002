@@ -227,13 +227,13 @@ ResultImage = zeros(x,y);
 for i= 4 : z-3
     for j= 4 : w-3
         avg = 0 ;
-        for a = 1 : 7
-            for b = 1 : 7
-                sum = filter(a,b)*NewImage(i-4 + a,j-4 + b);
+        for ii = 1 : 7
+            for jj = 1 : 7
+                sum = filter(ii,jj)*NewImage(i-4 + ii,j-4 + jj);
                 avg = avg + sum;
             end           
         end
-        ResultImage(i-3,j-3)= round(avg/49);
+        ResultImage(i-3,j-3)= ceil(avg/49);
     end
 end 
 ```
