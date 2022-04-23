@@ -1,7 +1,9 @@
-function medianFilter = median(image)
+clc;
+clear all;
+close all;
 window_size = 7
 pad = (window_size - 1)/2;
-image = imread(image);
+image = imread('1.jpg');
 image = rgb2gray(image);
 Result_image = image;
 [x y]=size(image);
@@ -12,5 +14,4 @@ for i=1+pad:x-pad
         Result_image(i,j)= mat((end-1)/2);
     end
 end
-figure;imshow(Result_image);
-end
+imshow(Result_image);
