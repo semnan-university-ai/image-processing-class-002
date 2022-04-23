@@ -305,4 +305,4 @@ nexttile;histogrameq('10.jpg');title('Picture 10');
 nexttile;histogrameq('11.jpg');title('Picture 11');
 nexttile;histogrameq('12.jpg');title('Picture 12');
 ```
-![ManualResult]()
+![ManualResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/12/Manual%20Result.png)
