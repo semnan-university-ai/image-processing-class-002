@@ -42,4 +42,4 @@ drawcircle('Center',[x y]/2,'Radius',x/8);
 ```
 در نهايت تصوير زير حاصل خواهد شد :  
  
- ![Result](https://raw.githubusercontent.com/semnan-university-ai/image-processing-class-002/main/exercises/fatemeh456/11/Result.PNG?token=GHSAT0AAAAAABPAIYAI35JEPAY3AJJ4YNNUYSLHN2A)
+ ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/11/Result.PNG)
