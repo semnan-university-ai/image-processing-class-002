@@ -9,4 +9,4 @@ image processing class - 002
 * Full name : Havva askari
 * github id : [@eveaskari](https://github.com/EvEAskari)
 * Email : havvaaskari0702@gmail.com
-* Type : ---
+* Type : Student of AI master degree
