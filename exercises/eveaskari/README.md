@@ -6,7 +6,7 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
-* github id : ---
-* Email : ---
+* Full name : Havva askari
+* github id : [@eveaskari](https://github.com/EvEAskari)
+* Email : havvaaskari0702@gmail.com
 * Type : ---
