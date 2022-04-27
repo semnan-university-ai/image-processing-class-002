@@ -42,6 +42,21 @@ figure, imhist(histeq(img1));   %showing the equalized histogram
 
 </div>
 
+برای نشان دادن خروجی ها کنار هم می توان از کد زیر هم استفاده کرد: 
+
+<div dir="ltr">
+
+```
+histimg1 = imhist(img1);
+eqimg1 = histeq(img1);
+eqhist =  imhist(histeq(img1)); 
+figure, imshowpair(img1,eqimg1,'montage');
+figure, imshowpair(eqhist,histimg1,'montage');
+```
+
+</div>
+
+ولی در اینجا ما از جدول استفاده کردیم چون خروجی را جدا جدا نمایش داده ایم.
 </div>
 
 |  Source |  Equalized |
