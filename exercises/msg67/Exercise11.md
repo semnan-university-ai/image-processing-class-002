@@ -25,7 +25,7 @@ end
 ```
 تصاویر نتیجه:
 
-##              تصویر راست: تصویر بهینه شده و               <<----------------------------->>                               تصویر چپ: تصویر اصلی 
+##              تصویر راست: تصویر بهینه شده               <<----------------------------->>                               تصویر چپ: تصویر اصلی 
 ![image 1](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(1).jpg?raw=true)
 ![image 2](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(2).jpg?raw=true)
 ![image 3](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(3).jpg?raw=true)
