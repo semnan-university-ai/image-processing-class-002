@@ -1,4 +1,4 @@
-## تمرین 13، اعمال فیلتر میانه و میانگین
+## تمرین 13، اعمال فیلتر میانه و میانگین با فیلتر 7 در 7
 
 این قسمت، برای پاک کردن حافظه و متغیرهایی است که شاید در اجرا های قبلی مورد استفاده قرارگرفته‌اند، و تقریبا در همه کدهای ما استفاده می‌شود.
 
@@ -19,7 +19,7 @@ copyImg= imgGray;
 
 
 ## تصویر اصلی :
-![image padding](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/normal.png)
+![image Original](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/normal.png)
 
 اینجا، سایز تصویر را برای اینکه برنامه بصورت عمومی تر و استاندارد شود، در متغیر size میگذاریم و برای اینکه آن را اسکارلر کنیم، از 2 دستور آخر استفاده کردیم، که از ماتریس size متغیر اول و در دستور بعی متغیر دوم را جدا کردیم.
 
@@ -41,7 +41,7 @@ for i=1 : sizeWidth
 end   
 ```
 اینجا، جای اصلی برنامه ما براي فيلتر ميانه می‌باشد، به نحوي كه با ايجاد يك ماتريس 7 در 7 و حركت دادن آن روي تصوير اصلي با 2 جلقه for تودرتو، مقادير متناظر آن را در ماتريس ```padd``` در يك آرايه 49 عنصري ذخيره ميكنيم، سپس آن را مرتب و سپس مقدار وسطی یعنی خانه 25 را جایگزین خانه وسطی تصویر وقتی فیلتر روی آن قرار گرفته است، می‌کنیم:
-### مقادیر به صورت آزمون و خطا بدست آمده‌اند
+#### مقادیر به صورت آزمون و خطا بدست آمده‌اند
 ```
 for i=1+3 : sizeWidth+3
     for j=1+3 : sizeHeight+3
@@ -65,3 +65,7 @@ for i=1+3 : sizeWidth+3
     end
 end 
 ```
+ نتیجه فیلتر میانه:
+![image padding](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/medianResult.png?raw=true)
+
+
