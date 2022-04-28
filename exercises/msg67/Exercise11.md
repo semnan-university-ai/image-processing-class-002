@@ -24,5 +24,22 @@ for i=1 : 17
 end
 ```
 تصاویر نتیجه:
+تصویر چپ: تصویر اصلی، و تصویر راست: تصویر بهینه شده
 ![image 1](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(1).jpg?raw=true)
-![image 2](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(10).jpg?raw=true)
+![image 2](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(2).jpg?raw=true)
+![image 3](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(3).jpg?raw=true)
+![image 4](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(4).jpg?raw=true)
+![image 5](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(5).jpg?raw=true)
+![image 6](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(6).jpg?raw=true)
+![image 7](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(7).jpg?raw=true)
+![image 8](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(8).jpg?raw=true)
+![image 9](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(9).jpg?raw=true)
+![image 10](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(10).jpg?raw=true)
+![image 11](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(11).jpg?raw=true)
+![image 12](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(12).jpg?raw=true)
+![image 13](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(13).jpg?raw=true)
+![image 14](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(14).jpg?raw=true)
+![image 15](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(15).jpg?raw=true)
+![image 16](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(16).jpg?raw=true)
+![image 17](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(17).jpg?raw=true)
+
