@@ -3,4 +3,4 @@
 
 ![image padding](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/finalPadding.png)
 
-![image padding](exercises/msg67/Haftsin/2022-04-28-16-40-34.gif)
+![image padding](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/2022-04-28-16-40-34.gif?raw=true)
