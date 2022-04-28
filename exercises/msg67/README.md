@@ -9,4 +9,4 @@ image processing class - 002
 * Full name : Mohamad Saeed Ghasemi
 * github id : msg67
 * Email : ghasemi82.saeed@gmail.com  & ms.ghasemi@aut.ac.ir
-* Type : ---
+* Type : Rouzane
