@@ -1,6 +1,6 @@
 ## تمرین 11، بهینه کردن هیستوگرام عکس های سفره هفت سین
 
-#### تصاویر نتیجه به صورت فایل GIF :
+### تصاویر نتیجه به صورت فایل GIF :
 
 ![videoOfResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/2022-04-28-16-40-34.gif?raw=true)
 
@@ -24,7 +24,8 @@ for i=1 : 17
 end
 ```
 تصاویر نتیجه:
-تصویر چپ: تصویر اصلی، و تصویر راست: تصویر بهینه شده
+
+##  ............            تصویر راست: تصویر بهینه شده و               <<-- ........... -->>                               تصویر چپ: تصویر اصلی 
 ![image 1](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(1).jpg?raw=true)
 ![image 2](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(2).jpg?raw=true)
 ![image 3](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/Haftsin/sofre%20(3).jpg?raw=true)
