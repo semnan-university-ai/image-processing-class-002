@@ -27,7 +27,7 @@ subplot(1,2,2);imshow(histeq(img_2));
 
 figure;
 subplot(1,2,1);imshow(img_3);
-subplot(1,2,2);imshow(histeq(img_3));
+subplot(1,2,2);imshow(histeq(img_2));
 
 figure;
 subplot(1,2,1);imshow(img_4);
