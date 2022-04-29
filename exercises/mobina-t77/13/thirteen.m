@@ -1,4 +1,3 @@
-
 clc;
 close all;
 clear;
@@ -6,7 +5,7 @@ clear;
 path='C:\Users\Mobina\Desktop\term 4\tamrin -hal-tamrin\13';
 folder=dir(fullfile(path,'*.jpg'));
 
-for num=1:12
+for num=1:2
     picture=fullfile(path,folder(num).name);
     img1=imread(picture);
 
@@ -22,7 +21,6 @@ img5 = padarray(img4,[1  1],'symmetric');
 
 [row,column] = size(img5);
 img8=img5;
-
 
 % mean7*7
 
@@ -55,19 +53,20 @@ figure, imshow(result1);title('mean filtered image');
 
 % median 7*7
 
+[roww,columnn] = size(img8);
 img7 = zeros;
 
-for i=4:(row-3)
-    for j=4:(column-3)
-       list_total = [double(img5(i,j)) , ...
-                double(img5(i,j+1)) , double(img5(i,j+2)) , double(img5(i,j+3)) , double(img5(i,j-1)) , double(img5(i,j-2)) , double(img5(i,j-3)) , ...
-                double(img5(i+1,j)) , double(img5(i+2,j)) , double(img5(i+3,j)) , double(img5(i-1,j)) , double(img5(i-2,j)) , double(img5(i-3,j)) , ...
-                double(img5(i+1,j+1)) , double(img5(i+1,j+2)) , double(img5(i+1,j+3)) , double(img5(i+1,j-1)) , double(img5(i+1,j-2)) , double(img5(i+1,j-3)) , ...
-                double(img5(i-1,j+1)) , double(img5(i-1,j+2)) , double(img5(i-1,j+3)) , double(img5(i-1,j-1)) , double(img5(i-1,j-2)) , double(img5(i-1,j-3)) , ...
-                double(img5(i+2,j+1)) , double(img5(i+2,j+2)) , double(img5(i+2,j+3)) , double(img5(i+2,j-1)) , double(img5(i+2,j-2)) , double(img5(i+2,j-3)) , ...
-                double(img5(i-2,j+1)) , double(img5(i-2,j+2)) , double(img5(i-2,j+3)) , double(img5(i-2,j-1)) , double(img5(i-2,j-2)) , double(img5(i-2,j-3)) , ...
-                double(img5(i+3,j+1)) , double(img5(i+3,j+2)) , double(img5(i+3,j+3)) , double(img5(i+3,j-1)) , double(img5(i+3,j-2)) , double(img5(i+3,j-3)) , ...
-                double(img5(i-3,j+1)) , double(img5(i-3,j+2)) , double(img5(i-3,j+3)) , double(img5(i-3,j-1)) , double(img5(i-3,j-2)) , double(img5(i-3,j-3))] ;
+for i=4:(roww-3)
+    for j=4:(columnn-3)
+       list_total = [double(img8(i,j)) , ...
+                double(img8(i,j+1))   , double(img8(i,j+2))   , double(img8(i,j+3))   , double(img8(i,j-1))   , double(img8(i,j-2))   , double(img8(i,j-3)) , ...
+                double(img8(i+1,j))   , double(img8(i+2,j))   , double(img8(i+3,j))   , double(img8(i-1,j))   , double(img8(i-2,j))   , double(img8(i-3,j)) , ...
+                double(img8(i+1,j+1)) , double(img8(i+1,j+2)) , double(img8(i+1,j+3)) , double(img8(i+1,j-1)) , double(img8(i+1,j-2)) , double(img8(i+1,j-3)) , ...
+                double(img8(i-1,j+1)) , double(img8(i-1,j+2)) , double(img8(i-1,j+3)) , double(img8(i-1,j-1)) , double(img8(i-1,j-2)) , double(img8(i-1,j-3)) , ...
+                double(img8(i+2,j+1)) , double(img8(i+2,j+2)) , double(img8(i+2,j+3)) , double(img8(i+2,j-1)) , double(img8(i+2,j-2)) , double(img8(i+2,j-3)) , ...
+                double(img8(i-2,j+1)) , double(img8(i-2,j+2)) , double(img8(i-2,j+3)) , double(img8(i-2,j-1)) , double(img8(i-2,j-2)) , double(img8(i-2,j-3)) , ...
+                double(img8(i+3,j+1)) , double(img8(i+3,j+2)) , double(img8(i+3,j+3)) , double(img8(i+3,j-1)) , double(img8(i+3,j-2)) , double(img8(i+3,j-3)) , ...
+                double(img8(i-3,j+1)) , double(img8(i-3,j+2)) , double(img8(i-3,j+3)) , double(img8(i-3,j-1)) , double(img8(i-3,j-2)) , double(img8(i-3,j-3))] ;
             
                    sorted_list_total = sort(list_total);
                    median = sorted_list_total(25);
@@ -82,4 +81,3 @@ end
 result2=mat2gray(img7);
 
 figure, imshow(result2);title('median filtered image');
-    
