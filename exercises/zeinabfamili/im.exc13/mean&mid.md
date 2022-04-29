@@ -36,6 +36,14 @@ for i= 4 : m-3
 end 
 ```
 ##### در نهایت برای نمایش تصویر اصلی و تصویر میانگین گیری شده از دستور figure  استفاده میکنیم. تصاویر 2و 5و 7و 10 و12 را فیلتر زده و نمایش دادیم.
+##### تصویر 2 هفت سین
 
 ![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig2.13.jpg)
-
+##### تصویر5
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig5.13.jpg)
+##### تصویر 7
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/gig7.13.jpg)
+##### تصویر 10
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/pic10.13.jpg)
+##### تصویر 12
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/pic12.13.jpg)
