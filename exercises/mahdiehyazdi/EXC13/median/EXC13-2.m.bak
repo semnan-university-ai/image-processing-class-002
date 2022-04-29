@@ -5,7 +5,7 @@ pkg load image;
 
 
 for n=1:12
-    img=rgb2gray(imread(strcat('../../EXC7/',int2str(n+8),'.jpg')));
+    img=rgb2gray(imread(strcat('./',int2str(n+8),'.jpg')));
     noise_img=imnoise(img,'salt & pepper',0.2);
     filter2=medfilt2(noise_img,[7 7]);
     figure(1);
