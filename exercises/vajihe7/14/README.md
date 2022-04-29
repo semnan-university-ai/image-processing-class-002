@@ -22,3 +22,4 @@ GAN از دو شبکه عصبی تشکیل شده است. یک مولد G(x) و 
  GAN‌ها را می‌توان بر روی تصاویر انسان‌ها آموزش داد تا چهره‌هایی واقع گرایانه تولید کنند. چهره‌هایی که در تصویر زیر مشاهده می‌کنید با استفاده از GANها ایجاد شده‌اند و در واقعیت وجود ندارند.
  
 
+![what-are-generative-adversarial-networks-gans-hamruyesh-com](https://user-images.githubusercontent.com/79658260/165943657-644ca79d-7e83-42ba-a8b2-b5de79ca8a4e.png)
