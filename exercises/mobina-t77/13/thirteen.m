@@ -21,6 +21,8 @@ img4 = padarray(img3,[1  1],'symmetric');
 img5 = padarray(img4,[1  1],'symmetric');
 
 [row,column] = size(img5);
+img8=img5;
+
 
 % mean7*7
 
