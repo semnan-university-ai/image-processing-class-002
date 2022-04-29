@@ -1,7 +1,6 @@
 clc;
 close all;
 clear;
-pkg load image;
 
 
 for n=1:12
