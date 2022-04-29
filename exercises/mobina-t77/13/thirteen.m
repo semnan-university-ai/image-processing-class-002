@@ -6,7 +6,7 @@ clear;
 path='C:\Users\Mobina\Desktop\term 4\tamrin -hal-tamrin\13';
 folder=dir(fullfile(path,'*.jpg'));
 
-for num=1:2
+for num=1:12
     picture=fullfile(path,folder(num).name);
     img1=imread(picture);
 
