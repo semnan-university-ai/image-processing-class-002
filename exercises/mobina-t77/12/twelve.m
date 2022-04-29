@@ -17,10 +17,11 @@ clear;
 path='C:\Users\Mobina\Desktop\term 4\tamrin -hal-tamrin\12';
 folder=dir(fullfile(path,'*.jpg'));
 
-for num=1:12
+for num=1
     picture=fullfile(path,folder(num).name);
     img1=imread(picture);
     img2 = rgb2gray(img1);
+    img3 = img2;
     [row,column] = size(img2);
     NumPixel = zeros(1,256);
     for i = 1:row
@@ -55,9 +56,11 @@ for num=1:12
     end
     
 
-figure,imshow(img1)
-figure,imhist(img1)
-figure,imshow(img2)
-figure,imhist(img2)
+figure,imshow(img1);title('color-ful image');
+figure,imhist(img1);title('hist of color-ful image');
+figure,imshow(img3);title('gray_scale image');
+figure,imhist(img3);title('hist of gray_scale image');
+figure,imshow(img2);title('equalized image');
+figure,imhist(img2);title('hist of equalized image');
 
 end
