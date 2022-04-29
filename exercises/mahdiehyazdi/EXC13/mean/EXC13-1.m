@@ -13,11 +13,3 @@ for n=1:12
     figure(2);
     subplot(3,4,n),imshow(mean_filter),title(n);
 end
-
-
-
-  
-
-
-
-
