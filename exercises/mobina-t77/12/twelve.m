@@ -17,7 +17,7 @@ clear;
 path='C:\Users\Mobina\Desktop\term 4\tamrin -hal-tamrin\12';
 folder=dir(fullfile(path,'*.jpg'));
 
-for num=1
+for num=1:12
     picture=fullfile(path,folder(num).name);
     img1=imread(picture);
     img2 = rgb2gray(img1);
