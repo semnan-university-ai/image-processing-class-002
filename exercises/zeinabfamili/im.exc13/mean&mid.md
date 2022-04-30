@@ -47,3 +47,25 @@ end
 ![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/pic10.13.jpg)
 ##### تصویر 12
 ![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/pic12.13.jpg)
+##### حال دستورات زیر برای یافتن میانه یک تصویر با پنجره همسایگی 7 در 7 را داریم. ابتدا خواندن تصویر .سپس خاکستری کردن و padding  آن و درادامه یافتن میانه هر پنجره و جایگذاری این پیکسل در تصویر جدید که در اینجا بنام image3 می باشد.
+```
+clc;
+close all;
+clear;
+image = imread('1.jpg');
+image1 = rgb2gray(image);
+[a,b] = size(image1);
+image2 = zeros(a+6,b+6);
+image2(4:end-3,4:end-3) = image1;
+[m,n] = size(image2);
+image3 = zeros(size(image1));
+
+for i = 4 : m-3
+    for j = 4 : n-3
+        g = image2(i-3:i+3,j-3:j+3);
+        c = median(g(:));
+        image3(i-3,j-3)= c;
+    end
+end
+```
+##### برای رسم نیز از دستور figure , subplot استفاده شده است.
