@@ -68,4 +68,14 @@ for i = 4 : m-3
     end
 end
 ```
-##### برای رسم نیز از دستور figure , subplot استفاده شده است.
+##### برای نمایش  نیز از دستور figure , subplot استفاده شده است.که در اینجا نتیجه اجرا را برای تصاویر 1 و3و 6و 8و 10 سفره هفت سین اورده ایم.
+```
+figure;
+subplot(1,2,1),imshow(uint8 (image2));title ('padding image');
+subplot(1,2,2),imshow(uint8 (image3));title('median filter');
+```
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig1.13m.jpg)
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig3.13m.jpg)
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig6.13m.jpg)
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig8.13m.jpg)
+![min](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/im.exc13/fig10.13m.jpg)
