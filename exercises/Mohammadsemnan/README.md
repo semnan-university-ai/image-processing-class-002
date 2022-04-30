@@ -9,4 +9,4 @@ image processing class - 002
 * Full name : Mohammad Mahdi Esmaeil Zadeh
 * github id : [Mohammadsemnan](https://github.com/Mohammadsemnan)
 * Email : [doostan123@protonmail.com](mailto:doostan123@protonmail.com)
-* Type : ---
+* Type : Roozaneh
