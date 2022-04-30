@@ -49,4 +49,8 @@
 
 
 
-## درحال تکمیل شدن....
+## منابع:
+http://iran-machinelearning.ir/generative-adversarial-networks/
+https://shahaab-co.com/mag/edu/deep-learning/understanding-generative-adversarial-networks-gan/
+https://blog.faradars.org/generative-adversarial-networks/#%D9%85%D8%AF%D9%84_%D9%85%D9%88%D9%84%D8%AF_%DA%86%DB%8C%D8%B3%D8%AA%D8%9F
+https://www.analyticsvidhya.com/blog/2020/01/generative-models-gans-computer-vision/#:~:text=Explicit%20density%20models%20define%20an,that%20can%20directly%20generate%20data.
