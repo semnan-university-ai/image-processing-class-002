@@ -74,7 +74,7 @@ img = imread("fruit.jfif ");
 figure, imshow(img);
 [x,y,~] = size(img);
 ```
-![RGBimage]()
+![RGBimage](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/16/fruit.jfif)
 <br/>
 حال قصد داریم تصویر رنگی را به حالت True color ببریم.
 در کلاس حل تمرین نمونه ای از آن را دیدیم ولی برای اینکه به تصویر واقعی نزدیکتر باشد میخواهیم کار روی بازه ها را کمی دقیق تر پیش ببریم.
@@ -142,4 +142,4 @@ imwrite(img1,'MyImage.jpg')
 ```
 تصویر نتیجه به صورت زیر می باشد : 
 <br/>
-![TrueColorImag]()
+![TrueColorImag](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/16/MyImage.jpg)
