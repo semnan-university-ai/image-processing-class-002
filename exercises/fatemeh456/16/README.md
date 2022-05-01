@@ -5,9 +5,8 @@ close all;
 clear;
 
 img = imread("fruit.jfif ");
-figure, imshow(img);
 [x,y,~] = size(img);
-
+figure, imshow(img);
 
 for i = 1 : x
     for j = 1 : y
@@ -21,46 +20,42 @@ for i = 1 : x
                 end
 
             elseif img(i, j, k) < 102 && img(i, j, k) >= 51
-                if img(i, j, k) < 102/2
+                if img(i, j, k) < (102-51)/2
                     img(i, j, k) = 51 ;
                 else
                     img(i, j, k) = 102 ;
                 end
 
             elseif img(i, j, k) < 153 && img(i, j, k) >= 102
-                if img(i, j, k) < 153/2
+                if img(i, j, k) < (153-102)/2
                     img(i, j, k) = 102 ;
                 else
                     img(i, j, k) = 153 ;
                 end
                 
             elseif img(i, j, k) < 204 && img(i, j, k) >= 153 
-                if img(i, j, k) < 204/2
+                if img(i, j, k) < (204-153)/2
                     img(i, j, k) = 153 ;
                 else
                     img(i, j, k) = 204 ;
                 end
 
-            elseif img(i, j, k) > 153 && img(i, j, k) >= 204
-                if img(i, j, k) < 153/2
+            elseif img(i, j, k) < 255 && img(i, j, k) >= 204
+                if img(i, j, k) < (255-204)/2
                     img(i, j, k) = 204 ;
-                else
-                    img(i, j, k) = 153 ;
-                end
-
-            else
-                if img(i, j, k) < 255/2
-                    img(i, j, k) = 153 ;
                 else
                     img(i, j, k) = 255 ;
                 end
+
+            else
+                img(i, j, k) = 255 ;
             end
         end
     end
 end
 
 figure, imshow(img);
-imwrite(img1,'MyImage.jpg')
+imwrite(img,'My Image.jpg')
 ```
 #### بررسی کد :
 جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود. 
@@ -96,39 +91,35 @@ for i = 1 : x
                 end
 
             elseif img(i, j, k) < 102 && img(i, j, k) >= 51
-                if img(i, j, k) < 102/2
+                if img(i, j, k) < (102-51)/2
                     img(i, j, k) = 51 ;
                 else
                     img(i, j, k) = 102 ;
                 end
 
             elseif img(i, j, k) < 153 && img(i, j, k) >= 102
-                if img(i, j, k) < 153/2
+                if img(i, j, k) < (153-102)/2
                     img(i, j, k) = 102 ;
                 else
                     img(i, j, k) = 153 ;
                 end
                 
             elseif img(i, j, k) < 204 && img(i, j, k) >= 153 
-                if img(i, j, k) < 204/2
+                if img(i, j, k) < (204-153)/2
                     img(i, j, k) = 153 ;
                 else
                     img(i, j, k) = 204 ;
                 end
 
-            elseif img(i, j, k) > 153 && img(i, j, k) >= 204
-                if img(i, j, k) < 153/2
+            elseif img(i, j, k) < 255 && img(i, j, k) >= 204
+                if img(i, j, k) < (255-204)/2
                     img(i, j, k) = 204 ;
-                else
-                    img(i, j, k) = 153 ;
-                end
-
-            else
-                if img(i, j, k) < 255/2
-                    img(i, j, k) = 153 ;
                 else
                     img(i, j, k) = 255 ;
                 end
+
+            else
+                img(i, j, k) = 255 ;
             end
         end
     end
@@ -137,11 +128,11 @@ end
 در دستورات بالا ، روند بدین صورت است که مقادیر پیکسل ها را در هر بازه بررسی می کنیم . اگر مقدار آن از نصف حد بالای بازه کمتر باشد به پایین گرد می شود 
 در غیر این صورت به بالا رند می شود.
 <br/>
-در نهایت تصویرنهایی را نمایش داده و در قالب تصویر جدیدی به نام MyImage ذخیره می کنیم .
+در نهایت تصویرنهایی را نمایش داده و در قالب تصویر جدیدی به نام My Image ذخیره می کنیم .
 ```
 figure, imshow(img);
-imwrite(img1,'MyImage.jpg')
+imwrite(img,'My Image.jpg')
 ```
 ##### تصویر نتیجه :
 
-![TrueColorImag](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/16/MyImage.jpg)
+![TrueColorImag](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/16/My%20Image.jpg)
