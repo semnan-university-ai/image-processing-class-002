@@ -141,5 +141,4 @@ figure, imshow(img);
 imwrite(img1,'MyImage.jpg')
 ```
 تصویر نتیجه به صورت زیر می باشد : 
-<br/>
 ![TrueColorImag](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/16/MyImage.jpg)
