@@ -84,6 +84,6 @@ for i=1 : sizeWidth
 end
 ```
 
-## در آخر هم با دستور ```figure``` نتیجه را نمایش می‌دهیم:
+## در آخر هم با دستور ``` figure, imshow(uint8(resultImg)); ``` نتیجه را نمایش می‌دهیم:
 
 ![image_result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/trueColor.jpg?raw=true)
