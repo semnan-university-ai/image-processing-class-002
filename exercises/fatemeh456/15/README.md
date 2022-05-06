@@ -7,10 +7,10 @@ clear;
 RGBimage = imread("fruit.jfif");
 [x,y,~] = size(RGBimage);
 
-for i = 1 : 1 : x
-    for j = 1 : 1 : y
-        grayImage(i,j) = 0.299 * RGBimage(i,j,1) + 0.587 * RGBimage(i,j,2) + 0.114 * RGBimage(i,j,3) ;
-    end
+for i = 1 : x
+  for j = 1 : y
+      grayImage(i,j) = 0.299 * RGBimage(i,j,1) + 0.587 * RGBimage(i,j,2) + 0.114 * RGBimage(i,j,3) ;
+  end
 end
 
 subplot(1,2,1), imshow(RGBimage), title('RGB Scale Image');
@@ -36,10 +36,10 @@ gray = rgb2gray(RGBimage);
 ```
 اما می خواهیم تابع درون آن را بنویسیم . دو روش آن در کلاس حل تمرین بررسی شد اما روش سوم که روش استانداری برای این تبدیل است به شرح زیر می باشد .
 ```
-for i = 1 : 1 : x
-    for j = 1 : 1 : y
-        grayImage(i,j) = 0.299 * RGBimage(i,j,1) + 0.587 * RGBimage(i,j,2) + 0.114 * RGBimage(i,j,3) ;
-    end
+for i = 1 : x
+  for j = 1 : y
+      grayImage(i,j) = 0.299 * RGBimage(i,j,1) + 0.587 * RGBimage(i,j,2) + 0.114 * RGBimage(i,j,3) ;
+  end
 end
 ```
 در این حلقه for بر روی پیکسل های تصویر حرکت کرده و مقادیر مربوط به کانال قرمز را در 0.299 و مقادیر مربوط به کانال سبز را در 0.587 و مقادیر مربوط به کانال آبی را در 0.114 ضرب ، در انتها با هم جمع و مقدار gray level پیکسل به دست آمده را
