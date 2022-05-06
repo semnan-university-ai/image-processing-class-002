@@ -3,7 +3,7 @@
 ```
 img=imread('peppers.png');
 ```
-از دستورات clear all، clc و close all  به ترتیب برای پاک کردن صفحهCommand Window، حذف متغیرها و بستن پنجره ها استفاده شده است. تصویر با دستور imread خوانده شده است.
+ابتدا تصویر را با دستور imread میخوانیم.
 ```
 for i=1:size(img,1)
 for j=1:size(img,2)
