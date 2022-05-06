@@ -9,4 +9,4 @@ image processing class - 002
 * Full name : ali nikzad
 * github id : ali763
 * Email : alinikzad763@gmail.com
-* Type : student
+* Type : doctrate cadidate of biomedical engineering
