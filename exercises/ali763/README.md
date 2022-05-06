@@ -6,7 +6,7 @@ image processing class - 002
 * ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
 
 ### Student Info :
-* Full name : ---
-* github id : ---
-* Email : ---
-* Type : ---
+* Full name : ali nikzad
+* github id : ali763
+* Email : alinikzad763@gmail.com
+* Type : student

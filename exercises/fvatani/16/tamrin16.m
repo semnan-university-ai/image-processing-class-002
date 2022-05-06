@@ -1,14 +1,9 @@
-
-
-```
 clc;
 clear all;
 close all;
 
 image = imread('pears.png');
-```
-از دستورات clear all، clc و close all  به ترتیب برای پاک کردن صفحهCommand Window، حذف متغیرها و بستن پنجره ها استفاده شده است. تصویر با دستور imread خوانده شده است.
-```
+
 for i = 1 : size(image,1)
     for j = 1 : size(image,2)
         for k = 1 : 3
@@ -57,11 +52,4 @@ for i = 1 : size(image,1)
     end
 end
 
-```
-حلقه به اندازه طول و عرض تصویر تکرار می‌شود. k کانال رنگ تصویر را نشان می‌دهد. مقدار پیکسل به بازه‌های ([۱۵۳، ۲۰۴]، [۱۰۲، ۱۵۳]، [۵۱، ۱۰۲]، [۵۱، ۱-]) تقسیم شده است. اگر مقداری در بازه‌های مورد نظر قرار نگیرد مقدار ۲۵۵ برای آن ذخیره می‌شود. هر بازه ۵۰ مقدار را در برمیگیرد که اگر مقدار پیکسل در ۱/۲ اول بازه قرار گیرد به سمت پایین رند می‌شود و گرنه به بالا رند می‌شود.
-```
 figure, imshow(image);
-```
-خروجی نمایش داده می‌شود.
- ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fvatani/16/tamrin16.png)
-
