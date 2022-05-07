@@ -42,7 +42,7 @@ img2=zeros(row,col,Channels);
 
 ### input
 
-![image](https://user-images.githubusercontent.com/95109502/167243215-929d7e48-c2c6-4a64-8d20-e07a2eb8fa0f.png)
+![image](https://user-images.githubusercontent.com/95109502/167243258-dc31f3f9-46cf-43fc-99a1-39d3752864a1.png)
 
 ## output
 
