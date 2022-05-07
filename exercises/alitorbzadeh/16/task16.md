@@ -39,3 +39,12 @@ img2=zeros(row,col,Channels);
 
 در این دستور با پیمایش تک تک پیکسل ها  دستور خط 4 پیاده سازی می شود که برای هر کانال عدد منحصر به فرد خودش در نظر گرفته شده است. در نهایت با تبدیل فرمت ماتریس تصویر به uint8، تصویر خروجی در figure(2) نشان داده می وشود.
 
+
+### input
+
+![image](https://user-images.githubusercontent.com/95109502/167243215-929d7e48-c2c6-4a64-8d20-e07a2eb8fa0f.png)
+
+## output
+
+![image](https://user-images.githubusercontent.com/95109502/167243198-83d8101d-a1ca-4b33-94d3-9a81aa79ce09.png)
+
