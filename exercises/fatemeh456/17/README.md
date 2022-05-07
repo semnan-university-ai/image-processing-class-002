@@ -27,7 +27,7 @@ crop_image(img,20,60,160,200)
 در برنامه اصلی ، جهت اجرای بهتر کدها در متلب، بهتر است سه دستور اول در ابتدای هر برنامه نوشته شود. 
 در ادامه تنها کافیست تصویر را خوانده و تابع crop_image را فراخوانی کنیم .
 
-####تصویر اصلی
+#### تصویر اصلی
 ![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/17/Original%20Image.PNG)
-####تصویر برش خورده
+#### تصویر برش خورده
 ![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/17/Cropped%20Image.PNG)
