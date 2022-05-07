@@ -1,5 +1,5 @@
 ### Exercise 17
-####Function
+#### Function
 ```
 function cropimg = crop_image(image,row_start,col_start,row_end,col_end)
 
@@ -9,7 +9,7 @@ figure(2), imshow(crop_img) , title('Cropped Image')
 
 end
 ```
-####Main
+#### Main
 ```
 clc;
 clear;
@@ -28,6 +28,6 @@ crop_image(img,20,60,160,200)
 در ادامه تنها کافیست تصویر را خوانده و تابع crop_image را فراخوانی کنیم .
 
 ####تصویر اصلی
-![Original]()
+![Original](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/17/Original%20Image.PNG)
 ####تصویر برش خورده
-![Result]()
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/17/Cropped%20Image.PNG)
