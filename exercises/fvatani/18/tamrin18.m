@@ -52,7 +52,7 @@ wmImage = image;
 for i= 1:row
     for j = 1:col
         for k=1:3
-        wmImage(i,j,k) = bitset(image(i,j),1,hiddenImage(i,j));
+             wmImage(i,j,k) = bitset(image(i,j),1,hiddenImage(i,j));
         end
     end
 end
