@@ -63,14 +63,14 @@ wmImage = image;
 for i= 1:row
     for j = 1:col
         for k=1:3
-        wmImage(i,j,k) = bitset(image(i,j),1,wm(i,j));
+             wmImage(i,j,k) = bitset(image(i,j),1,hiddenImage(i,j));
         end
     end
 end
 
 figure(2); imshow(wmImage); title('Watermarked Image');
 ```
-دستور bitset مقدارimage را با بیت اول wm که کم ارزش‌ترین است بر می‌گرداند. این کار برای تمامی پیکسل‌ها انجام می‌شود. درنهایت تصویر نمایش داده می‌شود.
+دستور bitset مقدارimage را با بیت اول hiddenImage که کم ارزش‌ترین است بر می‌گرداند. این کار برای تمامی پیکسل‌ها انجام می‌شود. درنهایت تصویر نمایش داده می‌شود.
 
 ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fvatani/18/tamrin18-2.png)
 ``` 
