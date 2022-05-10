@@ -39,25 +39,25 @@ end
 
 
 if hrow < row || hcol < col
-    wm = zeros(size(hiddenImage),'uint8');
+    wm = zeros(size(image),'uint8');
     for i = 1:row
         for j =1:col
             wm(i,j)=hiddenImage(mod(i,hrow)+1,mod(j,hcol)+1);
         end
     end
-    hiddenImage = wm(1:row,1:col);
-end
+    hiddenImage = wm(1:row,1:col);  
+ end
 
 wmImage = image;
 for i= 1:row
     for j = 1:col
         for k=1:3
-        wmImage(i,j,k) = bitset(image(i,j),1,wm(i,j));
+        wmImage(i,j,k) = bitset(image(i,j),1,hiddenImage(i,j));
         end
     end
 end
 
-figure(2); imshow(wmImage,[]); title('Watermarked Image');
+figure(2); imshow(wmImage); title('Watermarked Image');
 
 
 for i = 1:1:row
