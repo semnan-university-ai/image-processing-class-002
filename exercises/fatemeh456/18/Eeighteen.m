@@ -104,3 +104,15 @@ img(:,:,1)=cover1;
 img(:,:,2)=cover2;
 img(:,:,3)=cover3;
 figure(2),imshow(img);
+
+%compression
+image = imread('Lenna.png'); 
+[m,n,p] = size(image)
+for i = 1:m
+    for j = 1:n
+        for k = 1:p
+            new_image(i,j,k) = bitand(image(i,j,k),224);
+        end
+    end
+end
+figure(3), imshow(new_image); title('compressed image');
