@@ -167,6 +167,7 @@ subplot(224), imhist(new_image), title('Compressed image');
 ```
 و نتیجه :
 ![Histogram](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/Histogram.PNG)
+<br/>
 **دلیل تفاوت این دو هیستوگرام** این است که در تصویر فشرده سازی شذه ما بیت های با ارزش های 0و1و2و3و4 را برداشته و صفر کردیم بنابراین تمام مقادیر بین 0 تا 255 موجود نیست و تنها برخی از این مقادیر باقی مانده است به همین دلیل هیستوگرام ها متفاوت از همند .
 <br/>
 **افزایش کنتراست** می تواند اتفاق بیفتد زمانی که ما bit plane های بیشتری را نگه داریم.
