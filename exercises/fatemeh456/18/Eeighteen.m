@@ -116,3 +116,17 @@ for i = 1:m
     end
 end
 figure(3), imshow(new_image); title('compressed image');
+
+%Histogram
+figure(4);
+subplot(221),imshow(image);title('Original Image');
+subplot(222), imhist(image), title('Original Imge');
+subplot(223),imshow(new_image);title('Compressed Image');
+subplot(224), imhist(new_image), title('Compressed image');
+
+%Histogram Equalization
+figure (5);
+heq_img = histeq(image);
+heq_recon = histeq(new_image);
+subplot(321),imshow(heq_img);title('Equalized Original Image');
+subplot(322), imshow(heq_recon), title('Equalized Compressed Imge');
