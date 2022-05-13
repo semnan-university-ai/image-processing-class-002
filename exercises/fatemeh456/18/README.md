@@ -117,7 +117,8 @@ figure (2),imshow(stego);
 <br/>
 در انتها مجدد مقدار میانگین تمام مقادیر پیسکل های تصویر نتیجه را محاسبه نموده و به نام Stego_image در خروجی چاپ می کنیم .
 خواهیم دید که دو تصویر با وجود شباهت ظاهری، میانگین مقادیر پیکسل هایشان متفاوت از هم است و این نشان می دهد که تصویر شاید در ظاهر تغییر نکرده باشد ولی در باطن تغییر کرده است.
-![steganography]()
+![steganography](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/steganography.PNG)
+<br/>
 در صورت **اختلاف ابعاد دو تصویر** کافیست اگر اندازه تصویر دوم بزرگتر است آن را Resize کنیم در غیر این صورت موردی ندارد . 
 <br/>
 ```
@@ -151,4 +152,5 @@ end
 figure(3), imshow(new_image); title('compressed image');
 ```
 در نهایت تصویر فشرده شده را نمایش می دهیم . این تصویر تنها شامل bit plane های 6و7و8و9 است .
-![compression]()
+![compression](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/compression.PNG)
+<br/>
