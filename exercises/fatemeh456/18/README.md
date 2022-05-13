@@ -120,8 +120,8 @@ figure (2),imshow(stego);
 ![steganography](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/steganography.PNG)
 <br/>
 تغييرات را ميتوان با توجه به تفاوت موجود بين ميانگين مقادير پيكسل هاي دو تصوير دريافت.
-<br/>
 ![average](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/average.PNG)
+<br/>
 در صورت **اختلاف ابعاد دو تصویر** کافیست اگر اندازه تصویر دوم بزرگتر است آن را Resize کنیم در غیر این صورت موردی ندارد . 
 <br/>
 ```
