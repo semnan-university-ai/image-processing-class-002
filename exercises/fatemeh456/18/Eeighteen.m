@@ -111,7 +111,7 @@ image = imread('Lenna.png');
 for i = 1:m
     for j = 1:n
         for k = 1:p
-            new_image(i,j,k) = bitand(image(i,j,k),224);
+            new_image(i,j,k) = bitand(image(i,j,k),240);
         end
     end
 end
