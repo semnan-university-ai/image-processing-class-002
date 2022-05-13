@@ -9,4 +9,4 @@ image processing class - 002
 * Full name : mahdieh yazdi
 * github id : mahdiehyazdi
 * Email : mahdiehyazdi801@gmail.com
-* Type : ---
+* Type : Student of AI master degree
