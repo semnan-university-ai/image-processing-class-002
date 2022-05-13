@@ -136,3 +136,18 @@ end
 <br/>
 برای  **فشرده سازی تصویر** اولیه  کافیست bit plane بیت های کم ارزش را که اطلاعات زیادی درون خود ندارند را حذف و bit plane بیت های ارزشمند را نگه داریم.
 <br/>
+من در ادامه تصویر فشرده ای را ایجاد کردم که با bit plane های 8و7و6و5 ایجاد شده و bit plane های کم ارزش را من 0و1و2و3و4 در نظر گرفتم . به همین دلیل 240 قرار دادم چون 128+64+32+16 = 240 است .
+```
+%compression
+image = imread('Lenna.png'); 
+[m,n,p] = size(image)
+for i = 1:m
+    for j = 1:n
+        for k = 1:p
+            new_image(i,j,k) = bitand(image(i,j,k),240);
+        end
+    end
+end
+figure(3), imshow(new_image); title('compressed image');
+```
+در نهایت تصویر فشرده شده را نمایش می دهیم . این تصویر تنها شامل bit plane های 6و7و8و9 است .
