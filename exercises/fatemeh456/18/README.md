@@ -153,5 +153,6 @@ end
 figure(3), imshow(new_image); title('compressed image');
 ```
 در نهایت تصویر فشرده شده را نمایش می دهیم . این تصویر تنها شامل bit plane های 6و7و8و9 است .
+<br/>
 ![compression](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/compression.PNG)
 <br/>
