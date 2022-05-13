@@ -169,7 +169,7 @@ subplot(222), imhist(image), title('Original Imge');
 subplot(223),imshow(new_image);title('Compressed Image');
 subplot(224), imhist(new_image), title('Compressed image');
 ```
-مي توانستيم از تابع هستوگرامي كه در تمارين قبلي به صورت دستي نوشايم نيز استفاده كنيم ولي من از تابع آماده آن استفاده كردم.
+مي توانستيم از تابع هستوگرامي كه در تمارين قبلي به صورت دستي نوشتيم نيز استفاده كنيم ولي من از تابع آماده آن استفاده كردم.
 <br/>
 و نتیجه :
 ![Histogram](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/Histogram.PNG)
