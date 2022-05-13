@@ -41,6 +41,7 @@ bitplane8 = mod(floor(img128), 2);
 figure(1), imshow(bitplane8);
 title('Bit Plane 8');
 ```
+![BitPlane8](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/BitPlane8.PNG)
 در ادامه می خواهیم تصویر دومی را خوانده و آن را در دل تصویر اول پنهان کنیم . کد این قسمت به صورت زیر است و در ادامه، آن را قدم به قدم توضیح خواهیم داد.
 <br/>
 لازم به دکر است این مرحله از کار بروی تصویر در حالت رنگی انجام شده است .
