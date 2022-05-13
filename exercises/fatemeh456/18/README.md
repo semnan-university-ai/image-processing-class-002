@@ -10,7 +10,7 @@ clear;
 img=imread('Lenna.png');
 img=rgb2gray(img); 
 ```
-حال قصد داریم bitplane 8 را از تصویر اصلی استخراج کنیم .
+حال **قصد داریم bitplane 8 را از تصویر اصلی استخراج کنیم .**
 برای این کار هم می توانیم به کمک دستور de2bi مقادیر را باینری کرده سپس بیت هشتم را جدا کنیم که کد آن به شکل زیر خواهد بود 
 ```
 [xImg yImg]= size(img);
@@ -44,7 +44,7 @@ title('Bit Plane 8');
 ##### Bit Plane 8
 ![BitPlane8](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/BitPlane8.PNG)
 <br/>
-در ادامه می خواهیم تصویر دومی را خوانده و آن را در دل تصویر اول پنهان کنیم . کد این قسمت به صورت زیر است و در ادامه، آن را قدم به قدم توضیح خواهیم داد.
+در ادامه می خواهیم **تصویر دومی را خوانده و آن را در دل تصویر اول پنهان کنیم .** کد این قسمت به صورت زیر است و در ادامه، آن را قدم به قدم توضیح خواهیم داد.
 <br/>
 لازم به دکر است این مرحله از کار بروی تصویر در حالت رنگی انجام شده است .
 ```
@@ -156,3 +156,29 @@ figure(3), imshow(new_image); title('compressed image');
 <br/>
 ![compression](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/compression.PNG)
 <br/>
+#### نمایش هیستوگرام تصویر اصلی و تصویر فشرده شده:
+```
+%Histogram
+figure(4);
+subplot(221),imshow(image);title('Original Image');
+subplot(222), imhist(image), title('Original Imge');
+subplot(223),imshow(new_image);title('Compressed Image');
+subplot(224), imhist(new_image), title('Compressed image');
+```
+و نتیجه :
+![Histogram](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/Histogram.PNG)
+<br/>
+**دلیل تفاوت این دو هیستوگرام** این است که در تصویر فشرده سازی شذه ما بیت های با ارزش های 0و1و2و3و4 را برداشته و صفر کردیم بنابراین تمام مقادیر بین 0 تا 255 موجود نیست و تنها برخی از این مقادیر باقی مانده است به همین دلیل هیستوگرام ها متفاوت از همند .
+<br/>
+**افزایش کنتراست** می تواند اتفاق بیفتد زمانی که ما bit plane های بیشتری را نگه داریم.هر چه تعداد bit plane ها بیشتر ، کیفیت تصویر به تصویر واقعی نزذیک تر است .
+<br/>
+در ادامه هيستوگرام هاشان را هموار می کنیم و خروجی آن ها را نمایش می دهیم .
+```
+%Histogram Equalization
+figure (5);
+heq_img = histeq(image);
+heq_recon = histeq(new_image);
+subplot(321),imshow(heq_img);title('Equalized Original Image');
+subplot(322), imshow(heq_recon), title('Equalized Compressed Imge');
+```
+![Histogram_Equalization](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/Histogram%20Equalization.PNG)
