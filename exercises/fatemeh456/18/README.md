@@ -156,3 +156,30 @@ figure(3), imshow(new_image); title('compressed image');
 <br/>
 ![compression](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/compression.PNG)
 <br/>
+#### نمایش هیستوگرام تصویر اصلی و تصویر فشرده شده:
+```
+%Histogram
+figure(4);
+subplot(221),imshow(image);title('Original Image');
+subplot(222), imhist(image), title('Original Imge');
+subplot(223),imshow(new_image);title('Compressed Image');
+subplot(224), imhist(new_image), title('Compressed image');
+```
+و نتیجه :
+![Histogram](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/Histogram.PNG)
+**دلیل تفاوت این دو هیستوگرام** این است که در تصویر فشرده سازی شذه ما بیت های با ارزش های 0و1و2و3و4 را برداشته و صفر کردیم بنابراین تمام مقادیر بین 0 تا 255 موجود نیست و تنها برخی از این مقادیر باقی مانده است به همین دلیل هیستوگرام ها متفاوت از همند .
+<br/>
+**افزایش کنتراست** می تواند اتفاق بیفتد زمانی که ما bit plane های بیشتری را نگه داریم.
+<br/>
+هر په تعداد bit plane ها بیشتر ، کیفیت تصویر به تصویر واقعی نزذیک تر است .
+<br/>
+در ادامه هيستوگرام هاشان را هموار می کنیم و خروجی آن ها را نمایش می دهیم .
+```
+%Histogram Equalization
+figure (5);
+heq_img = histeq(image);
+heq_recon = histeq(new_image);
+subplot(321),imshow(heq_img);title('Equalized Original Image');
+subplot(322), imshow(heq_recon), title('Equalized Compressed Imge');
+```
+![Histogram_Equalization](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/Histogram%20Equalization.PNG)
