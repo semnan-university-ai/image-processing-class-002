@@ -55,13 +55,10 @@ end
  ```
 
 
-
-
-
-در پایان هم با دستور زیر تصویر نتیجه را نشان می‌دهیم:
+در پایان هم باتوجه به خطاهایی که در روش‌های دیگر داشتم، و تست کد، مناطق خیلی نزدیک به انتهای بازه را تست کردم و با دستور زیر تصویر نتیجه را نشان دادم:
 ```
 figure, imshow(uint8(resultImg));
 ```
 
 ## نتیجه:
-![image Result](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/rgb2grayscale.jpg)
+![image Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/crop.jpg?raw=true)
