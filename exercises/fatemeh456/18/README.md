@@ -119,6 +119,9 @@ figure (2),imshow(stego);
 خواهیم دید که دو تصویر با وجود شباهت ظاهری، میانگین مقادیر پیکسل هایشان متفاوت از هم است و این نشان می دهد که تصویر شاید در ظاهر تغییر نکرده باشد ولی در باطن تغییر کرده است.
 ![steganography](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/steganography.PNG)
 <br/>
+تغييرات را ميتوان با توجه به تفاوت موجود بين ميانگين مقادير پيكسل هاي دو تصوير دريافت.
+<br/>
+![average](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/fatemeh456/18/average.PNG)
 در صورت **اختلاف ابعاد دو تصویر** کافیست اگر اندازه تصویر دوم بزرگتر است آن را Resize کنیم در غیر این صورت موردی ندارد . 
 <br/>
 ```
