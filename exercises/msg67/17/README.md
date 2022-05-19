@@ -63,5 +63,6 @@ figure, imshow(uint8(resultImg));
 ## نتیجه:
 ![image Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/crop.jpg?raw=true)
 
-مثال دیگر با پارامترهای : 250 ، 500  و 150 و 300
+مثال دیگر با پارامترهای : 250 ، 500  و 150 و 300  :
+
 ![image Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/crop2.jpg?raw=true)
