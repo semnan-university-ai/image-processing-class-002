@@ -23,8 +23,8 @@ sizeHeight = size(1,2);
 imgDouble= double(img);
 
 % ijade bit plane haye 1 ta 8
-% b1 = mod(imgDouble, 2);
-b1 = textBin;
+% b1 = mod(imgDouble, 2);   % tasvire asli
+b1 = textBin;   % tasvire hamrah ba TEXT
 b2 = mod(floor(imgDouble/2), 2);
 b3 = mod(floor(imgDouble/4), 2);
 b4 = mod(floor(imgDouble/8), 2);
