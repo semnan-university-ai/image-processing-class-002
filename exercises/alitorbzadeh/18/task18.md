@@ -99,3 +99,14 @@ title('8-7-6-5-4');
 
 ![text](https://user-images.githubusercontent.com/95109502/169597186-e8b641dc-c34b-42fc-aef2-ee14cf09f2a1.jpg)
 
+
+تصاویر خروجی:
+
+![b1](https://user-images.githubusercontent.com/95109502/169598276-cbfd2bc7-1783-4247-8984-684943e61adf.jpg)
+
+
+![b22](https://user-images.githubusercontent.com/95109502/169598292-1975288a-917f-4af4-a946-87fe8d0dde17.jpg)
+
+
+![b3](https://user-images.githubusercontent.com/95109502/169598318-9d5f50f6-8f7c-430c-9a1a-290e5bf0cbce.jpg)
+
