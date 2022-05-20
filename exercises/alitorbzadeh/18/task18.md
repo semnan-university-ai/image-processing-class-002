@@ -95,3 +95,7 @@ title('8-7-6-5-4');
 
 تصاویر ورودی:
 
+![1438480](https://user-images.githubusercontent.com/95109502/169597126-05de5772-129a-4a91-89a0-4324c46846cf.jpg)
+
+![text](https://user-images.githubusercontent.com/95109502/169597186-e8b641dc-c34b-42fc-aef2-ee14cf09f2a1.jpg)
+
