@@ -91,3 +91,14 @@ title('Recombined Image');
 ```
 
 ![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/bitPlane.jpg?raw=true)
+
+## قسمت دوم:
+تصویر دوم (text) را به وسیله کد زیر، به باینری تبدیل میکنیم:
+```
+textIn=imread("asset/text.jpg");
+textBin = im2bw(textIn)
+figure, imshow(textBin);
+```
+برای مخفی کردن عکس شعر، در تصویر Lena، بعد از باینری کردن تصویر نوشته، آن را به جای Bit Plane اول تصویر اصلی جایگذاری میکنیم، و نتیجه زیر حاصل می‌شود:
+
+![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/bitPlaneBinaryTextAdded.jpg?raw=true)
