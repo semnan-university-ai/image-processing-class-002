@@ -112,4 +112,10 @@ figure, imshow(textBin);
 ## کاهش حجم:
 با توجه به نتیجه مخفی شدن تصویر text در تصویر اصلی و عدم خرابی نتیجه، می‌توان گفت با حذف چند Bit Plane اول، عملا مشکل خاصی در تصویر بوجود نمی آید:
 
+![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/delete1,2,3,4.jpg?raw=true)
+
+![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/delete1,2.jpg?raw=true)
+
+
+
 
