@@ -110,12 +110,14 @@ figure, imshow(textBin);
 
 
 ## کاهش حجم:
-با توجه به نتیجه مخفی شدن تصویر text در تصویر اصلی و عدم خرابی نتیجه، می‌توان گفت با حذف چند Bit Plane اول، عملا مشکل خاصی در تصویر بوجود نمی آید:
+با توجه به نتیجه مخفی شدن تصویر text در تصویر اصلی و عدم خرابی نتیجه، می‌توان گفت با حذف چند Bit Plane اول، عملا مشکل خاصی در تصویر بوجود نمی آید و با کم شدن تعداد سطح خاکستری پیکسل‌ها قاعدتا حجم فایل کم می‌شود:
+هر پیکسل، از 2^8 به 2^6 یا کمتر بیت نیاز دارد، یعنی کمتر از 1 بایت:
 
 ![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/delete1,2,3,4.jpg?raw=true)
 
 ![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/delete1,2.jpg?raw=true)
 
 
+## هیستوگرام دو تصویر (عادی و نهان‌نگاری شده):
 
 
