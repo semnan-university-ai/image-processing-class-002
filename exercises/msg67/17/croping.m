@@ -26,7 +26,7 @@ yy2=input("please enter your second numberr in range of "+yy1+" and "...
     +sizeHeight+ ": ");
 
 
-result=zeros(sizeWidth, sizeHeight);
+result=zeros((max(xx1,xx2)- min(xx1,xx2)), (max(yy1,yy2)-min(yy1,yy2)));
 
 
 l=1;
