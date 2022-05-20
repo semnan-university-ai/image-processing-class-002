@@ -102,3 +102,12 @@ figure, imshow(textBin);
 برای مخفی کردن عکس شعر، در تصویر Lena، بعد از باینری کردن تصویر نوشته، آن را به جای Bit Plane اول تصویر اصلی جایگذاری میکنیم، و نتیجه زیر حاصل می‌شود:
 
 ![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/bitPlaneBinaryTextAdded.jpg?raw=true)
+
+درآخر نیز با جمع کردن تمامی 8 صفحه، مشاهده می‌شود که تغییر خاصی در تصویر وجود ندارد.
+
+## تفاوت ابعاد !!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+
+
+
+
+
