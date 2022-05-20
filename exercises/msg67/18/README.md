@@ -120,9 +120,9 @@ figure, imshow(textBin);
 
 ## هیستوگرام دو تصویر (عادی و نهان‌نگاری شده):
 ### تصویر اصلی:
-![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/orginalLenaWithTextHist.jpg?raw=true)
-### تصویری که در بیت پلین اول، تصویر شعری پنهان شده است:
 ![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/orginalLenaWithHist.jpg?raw=true)
+### تصویری که در بیت پلین اول، تصویر شعری پنهان شده است:
+![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/orginalLenaWithTextHist.jpg?raw=true)
 
 
 
