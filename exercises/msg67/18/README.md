@@ -89,4 +89,4 @@ imshow(uint8(orginalPic));
 title('Recombined Image');
 ```
 
-[!imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/bitPlane.jpg?raw=true)
+![imageResult](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/msg67/asset/bitPlane.jpg?raw=true)
