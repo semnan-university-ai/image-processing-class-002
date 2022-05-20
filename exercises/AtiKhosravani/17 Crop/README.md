@@ -64,6 +64,6 @@ ImgCrp_func(img,35,140,40,200)
   </br>
 
   
-  
+  ![Result](Result.png)
   
   </div>
