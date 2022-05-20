@@ -20,9 +20,9 @@ sizeHeight = size(1,2);
 
 ![image Result](https://github.com/semnan-university-ai/image-processing-class-002/raw/main/exercises/msg67/asset/rgb2grayscale.jpg)
 
-در اینجا یک ماتریس 0 به سایز طول و عرض تصویر ورودی می‌سازیم تا نتیجه کار را در آن ذخیره کنیم: 
+در اینجا یک ماتریس 0 به سایز طول ماکزیمم ورودی - مینیمم آن و همچنین عرض آن، که توسط کاربر در ورودی وارد شده است، می‌سازیم تا نتیجه کار را در آن ذخیره کنیم: 
 ```
-result=zeros(sizeWidth,sizeHeight);
+result=zeros((max(xx1,xx2)- min(xx1,xx2)), (max(yy1,yy2)-min(yy1,yy2)));
 
 ```
  به وسیله خطوط زیر، 2 نقطه برای شروع و خاتمه برش عکس از کاربر می‌گیریم:
