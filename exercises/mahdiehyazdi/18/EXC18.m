@@ -27,7 +27,7 @@ bitPlane_6 = mod(floor(double(img)/32), 2);
 bitPlane_7 = mod(floor(double(img)/64), 2);
 bitPlane_8 = mod(floor(double(img)/128), 2);
 
-orginalPic = (2 * (2 * (2 * (2 * (2 * (2 * (2 * bitPlane_8 + bitPlane_7) + bitPlane_6) + bitPlane_5) + bitPlane_4) + bitPlane_3) + bitPlane_2) + bitPlane_1);
+pic = (2 * (2 * (2 * (2 * (2 * (2 * (2 * bitPlane_8 + bitPlane_7) + bitPlane_6) + bitPlane_5) + bitPlane_4) + bitPlane_3) + bitPlane_2) + bitPlane_1);
 
 figure, subplot(2, 5, 1);
 imshow(img);
@@ -66,18 +66,18 @@ imshow(bitPlane_8);
 title('Bit Plane 8');
 
 subplot(2, 5, 10);
-imshow(uint8(orginalPic));
+imshow(uint8(pic));
 title('Recombined Image');
 
 
 figure, subplot(1, 2,1)
-imshow(uint8(orginalPic));
+imshow(uint8(pic));
 title("original Pic");
 
 subplot(1,2 , 2)
-imhist(uint8(orginalPic));
+imhist(uint8(pic));
 
 
-bitPic = 2*(2 * (2 * (2 * (2 * (2 * (2 * bitPlane_8 + bitPlane_7) + bitPlane_6) + bitPlane_5) ) ) );
+bit_Pic = 2*(2 * (2 * (2 * (2 * (2 * (2 * bitPlane_8 + bitPlane_7) + bitPlane_6) + bitPlane_5) ) ) );
 
-figure, imshow(uint8(bitPic)); title("bitPlane 8 & 7 & 6 & 5");
+figure, imshow(uint8(bit_Pic)); title("bitPlane 8 & 7 & 6 & 5");
