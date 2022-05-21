@@ -59,5 +59,5 @@ figure;
 subplot(1,2,1),imshow(uint8(image));title ('orginal image');
 subplot(1,2,2),imshow(uint8(timage));title ('truecolor image');
 ```
-![truecolor](https://user-images.githubusercontent.com/94124607/167182697-40a10bef-ac09-4760-a2ab-acd9c26bc35b.png)
+![truecolor]([https://user-images.githubusercontent.com/94124607/167182697-40a10bef-ac09-4760-a2ab-acd9c26bc35b.png](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/16/fig%2016.jpg))
 ```
