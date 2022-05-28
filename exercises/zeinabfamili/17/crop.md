@@ -27,4 +27,4 @@ figure;
 subplot(1,2,1),imshow(uint8(image));title('orginal image');   
 subplot(1,2,2),imshow(uint8(image1)); title('crop image');
 ```
-![crop](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/16/fig%2016.jpg)
+![crop](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/17/crop%20image.jpg)
