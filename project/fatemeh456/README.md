@@ -181,6 +181,6 @@ Done = 1
 حال هر تصویری از اسکناس یا یر اسکناس که در پوشه Test قرار دهیم می تواند ارزش آن را پیش بینی نموده و نمایش دهد.
 ما برای نمونه 10 تصویر  از تصاویر اسکناس هایی که در طی تمرین دهم جمع آوری شده است را در پوشه Train و 35 تصویر را در پوشه Test قرار دادیم
 :نتیجه را در زیر خواهیم دید
-![Result]()
+![Result](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fatemeh456/Result.png)
 
 
