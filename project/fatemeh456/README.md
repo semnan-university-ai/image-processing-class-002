@@ -84,17 +84,6 @@ end
 ## Test
 مانند Train مسیر پوشه Test را خوانده و تصاویر آن را در images نگه می داریم .
 حال تابع Train را فراخوانی کرده و مرحله آموزش را انجام می دهیم .
-```
-clc;
-clear;
-close all;
-
-path    = '../img/test/';
-images	= dir(strcat(path, '*.jpg'));
-count   = length(images);
-
-[ test_data_number, test_data_names ] = train();
-```
 حال مانند مرحله Train، تک به تک تصاویر را خواهنده و هر تصویر را در متغیر image قرار داده سپس میانگین مقادیر کانال های آبی و سبز و قرمز
 هر تصویر را به کمک تابع rgbAvg محاسبه می نماید.
 <br/>
@@ -121,8 +110,18 @@ end
 در ماتریس images_result مقادیر میانگین کانال ها، برچسب عددی پیش بینی شده تصویر و فاصله آن با میانگین تصویر Train نوشته می شود .
 و در ماتریس images_result_label نام و برچسب تصویر در قالب ارزش اسکناس ذخیره می شود.
 <br/>
-در انتها با فرمان شرطی if کاری می کنیم که avg مقادیر اگر دور از avg موجود باشد تصویر را با عنوان no money نمایش دهد و در صورت صحت انجام اعمال تعریف شده ، Done = 1 چاپ خواهد شد .
+در انتها با فرمان شرطی if کاری می کنیم که avg مقادیر اگر دور از avg موجود باشد تصویر را با عنوان no money نمایش دهد و در صورت صحت انجام اعمال تعریف شده ، Done = 1 چاپ خواهد شد.
+### main
 ```
+clc;
+clear;
+close all;
+
+path    = '../img/test/';
+images	= dir(strcat(path, '*.jpg'));
+count   = length(images);
+
+[ test_data_number, test_data_names ] = train();
 figure;
 for i = 1 : count
     image_file          = images(i).name;
