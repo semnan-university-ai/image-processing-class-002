@@ -30,4 +30,4 @@ figure;
 subplot(1,2,1),imshow(uint8(image)); title('orginal image');
 subplot(1,2,2),imshow(uint8(bp8));title('bite plan8 image');
 ```
-![bp8](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/17/crop%20image.jpg)
+![bp8](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/18/bitplane8.jpg)
