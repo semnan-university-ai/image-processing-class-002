@@ -33,11 +33,8 @@ for i = 1:m
             d=de2bi(image(i,j,2),8);
             d(1)=cover(k);
             dd= bi2de(d);
-         
-            wimage(i,j,1) =image(i,j,1);
             wimage(i,j,2) = dd;
-            wimage(i,j,3) = image(i,j,3);
-        k=k+1; 
+            k=k+1; 
         end
     end
 end
@@ -45,7 +42,20 @@ end
 ##### در نهایت تصویر ورودی و تصویر cover شده را نمایش میدهیم.
 ```
 figure;
-subplot(1,2,1),imshow(uint8(image)); title('orginal image');
-subplot(1,2,2),imshow(uint8(waterimage));title('result image');
+subplot(3,2,1),imshow(uint8(image)); title('orginal image');
+subplot(3,2,2),imshow(uint8(wimage));title('result image');
 ```
 ![stego](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/18/fig%20setgo%2018.jpg)
+## هیستوگرام تصویر اصلی و تصویر دوم را نمایش دهید. دلیل تفاوت هیستوگرام¬های خروجی چیست؟
+##### اگر  تفاضل دو تصویر را یافته وماکزیمم ماکزیمم قدر مطلق آن را بیابیم باید 1 باشد. که این را نیز محاسبه نمودیم.
+```
+max(max(abs(image-wimage)));
+min(min(abs(image-wimage)));
+```
+##### حال برای نمایش هیستوگرام تصویر اصلی و تصویر استیگانوگرافی شده از دستور histogram استفاده می کنبم. همچنین تفاوت دو تصویر را یافته و هیستوگرام ان را رسم نمودم.
+```
+subplot(3,2,3),histogram(image);title('hist orginal image');
+subplot(3,2,4),histogram(wimage);title('hist result image');
+subplot(3,2,5),histogram(abs(image-wimage));title('diff histimage'); 
+```
+![histstego](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/exercises/zeinabfamili/18/fig.hist18.jpg)
