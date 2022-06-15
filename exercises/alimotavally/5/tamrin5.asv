@@ -1,0 +1,8 @@
+clc;
+clear;
+close all;
+
+im = imread('/Users/s.ali.motavally/Desktop/tamrin5/imaget2.jpg');
+img = imresize(im, [450 550]);
+gray_img =rgb2gray(img);
+[x,y] = size(gra

@@ -1,0 +1,15 @@
+clc;
+clear;
+close all;
+histequal('1.jpg');
+histequal('2.jpg');
+histequal('3.jpg');
+histequal('4.jpg');
+histequal('5.jpg');
+histequal('6.jpg');
+histequal('7.jpg');
+histequal('8.jpg');
+histequal('9.jpg');
+histequal('10.jpg');
+histequal('11.jpg');
+histequal('12.jpg');

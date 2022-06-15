@@ -1,0 +1,13 @@
+clc;
+close all;
+clear;
+img = imread("monarch.png");
+img = rgb2gray(img);
+img = imresize(img, [300 400]);
+figure, imshow(img);
+img_siz = size(img);
+padd = padarray(img,[1 1],'replicate','both');
+figure, imshow(padd);    
+ img_siz = size(img);
+padd = padarray(img,[5 5],'replicate','both');
+figure, imshow(padd);
