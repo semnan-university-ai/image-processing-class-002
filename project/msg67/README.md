@@ -1,12 +1,12 @@
+## درحال تکمیل.....
 # image-processing-class
 image processing class - 002
 
-## Information
-* ##### Teacher: Dr. Farzin Yaghmaee - [Contact](mailto:f_yaghmaee@semnan.ac.ir)
-* ##### TA : Amir Shokri - [Contact](mailto:amirshokri@semnan.ac.ir)
-
-### Student Info :
-* Full name : Mohamad Saeed Ghasemi
-* github id : msg67
-* Email : ghasemi82.saeed@gmail.com  & ms.ghasemi@aut.ac.ir
-* Type : Rouzane
+# پروژه تشخیص اسکناس
+در این پروژه تصویر اسکناس به برنامه داده می‌شود، و برنامه ما باید تشخیص درستی از مقدار پول به وسیله دیتابیس از قبل آماده خود بدهد، در حقیقت باید ورودی را در دسته درست دسته بندی کند.
+مثل همه برنامه‌ها در این کلاس، بازهم برنامه با 3 عبارت زیر جهت پاک کردن حافظه و workspace و مقادیر شروع می‌شود:
+```
+clc;
+clear;
+close all;
+```
