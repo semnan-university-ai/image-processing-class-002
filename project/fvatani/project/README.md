@@ -91,8 +91,10 @@ subplot(ceil(N/7),7,1),imshow(reshape_test,[]),title("orginal");
 با دستور imhist هیستوگرام تصویر ورودی(تست) محاسبه می‌شود. هیستوگرام بدست امده reshape می‌شود. مقدار alpha برابر با ۱۶ تعیین شده زیرا تنوع اسکناس‌ها و رنگ‌های آن بیش از ۱۶ مورد نیست. با تابع mean میانگین عناصرهیستوگرام تغییر اندازه داده شده محاسبه می‌شود. همچنین واریانس هیستوگرام اصلی و تغییر اندازه داده شده محاسبه می‌شود. مقادیر محاسبه شده نمایش داده می‌شود.
 
 
- ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/project/1.png)
- ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/project/2.png)
+ ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/1.png)
+ ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/2.png)
+ 
+
 
 ```
 for n = 1 : N
@@ -205,4 +207,5 @@ disp("SSIM = "+string(datastract(yy).txt));
 ```
 بعد از اتمام حلقه نتایج نمایش داده می‌شود. varr_E به ماتریس تبدیل می‌شود و کوچکترین مقدار در MinVal قرار می‌گیرد. کوچکترین مقدار mean_E را پیدا می‌کنیم و txt که مقدار اسکناس را نشان می‌دهد چاپ می‌کنیم. این کار برای پیدا کردن کوچکترین مقدار واریانس، کوواریانس، ssim و بقیه موارد تکرار می‌شود. درنهایت مقدار اسکناس در هر روش چاپ می‌شود.
  
- ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/project/3.png)
+ ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/3.png)
+
