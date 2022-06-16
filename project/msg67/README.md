@@ -10,3 +10,21 @@ clc;
 clear;
 close all;
 ```
+در قسمت بعد، بوسیله uigetfile یک پنجره جهت ورودی باز می‌شود:
+```
+ [filename,path] = uigetfile({'*.jpg';'*.jpeg';},...
+                          'Select an Image File');
+
+  img=imread([path filename]);
+```
+
+بعد از ورود یک عکس JPG یا JPEG بوسیله یک تابع به قسمت اصلی برنامه وارد می‌شویم:
+ابتدای تابع و بعد از مقدار‌دهی‌های اولیه‌، با این دستور بررسی می‌کنیم که تصویر در راستای درستی می‌باشد یا خیر. در نهایت اگر نبود آن را rotate می‌کند:
+```
+if(size(input_img,1)>size(input_img,2))
+    check_img=imresize(input_img,[NaN 295]);    % check image= vorodi
+else
+    check_img=imresize(input_img,[295 NaN]);
+end
+```
+
