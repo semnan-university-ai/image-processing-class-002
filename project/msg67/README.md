@@ -63,8 +63,7 @@ end
         
                 
         
-        if(abs(a2-I2) < 150 && abs(a4-I4) < 150 && abs(a6-I6) < 150)
-%          if(true)   
+        if(abs(a2-I2) < 150 && abs(a4-I4) < 150 && abs(a6-I6) < 150)   
             a=rgb2gray(a);
             b=rgb2gray(check_img);
             
@@ -91,4 +90,35 @@ end
         
     end
 ```
+در قسمت‌های بعد، بیشتر کار برای رسم نمودار نتیجه استفاده شده است:
+با استفاده از بیشترین نقاط اشتراک، تصویر انتخاب شده از دیتابیس ابتدا خاکستری می‌شود، سپس دوباره نقاط اشتراک استخراج می‌شوند: 
 
+
+```
+[~,index]=max(allMatchPoint);
+
+cashAmount =str2double(regexp(allFileName{index}, '\d+', 'match'));
+
+
+a=imread(allFileName{index});
+a=im2gray(a);
+
+
+apoints = detectKAZEFeatures(a,'Diffusion','region');
+bpoints = detectKAZEFeatures(b,'Diffusion','region');
+
+
+[features1,valid_points1] = extractFeatures(a,apoints);
+[features2,valid_points2] = extractFeatures(b,bpoints);
+
+[indexPairs matchMetric] = matchFeatures(features1, features2) ;
+
+matchedPoints1 = valid_points1(indexPairs(:,1),:);
+matchedPoints2 = valid_points2(indexPairs(:,2),:);
+
+figure; ax = axes;
+showMatchedFeatures(a,b,matchedPoints1,matchedPoints2,'montage','Parent',ax);
+title(ax,strcat('your money is  ',string(cashAmount),' toman'));
+legend(ax, 'orginal imaage','test image');  % strcat neveshtane chand chiz dar plot
+end
+```
