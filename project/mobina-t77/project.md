@@ -321,5 +321,64 @@ end
 
 ### output 
 در نهایت شکل خروجی به این صورت می باشد: 
-![This is an image](https://github.com/semnan-university-ai/image-processing-class-002/tree/main/project/mobina-t77/project.png)
+![This is an image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/mobina-t77/project.png)
 
+### تابعPREPARE:
+تابع prepare کاری که انجام میدهد این است که به طور کلی دیتاست را آماده سازی میکند. در قدم اول با تابع masking  کانال های
+رنگی تصویر را جدا میکند . در قدم بعدی با تابع averaging  میانگین هر تصویر کانال رنگی را محاسبه میکند و در نهایت
+با تابعscaling of brightness مقیاس روشنایی هر تصویر را اندازه میگیرد .
+
+```
+function [ y_R,y_G,y_B ] = Prepare( x )
+
+[y_R,y_G,y_B]=Masking(x);
+
+y_R=Averaging(y_R);
+y_G=Averaging(y_G);
+y_B=Averaging(y_B);
+
+y_R=ScalingOfBrightness(y_R);
+y_G=ScalingOfBrightness(y_G);
+y_B=ScalingOfBrightness(y_B);
+
+end
+
+
+```
+
+###  تابعMasking:
+```
+
+function [ y_R,y_G,y_B ] = Masking( x )
+y_R=x(:,:,1);
+y_G=x(:,:,2);
+y_B=x(:,:,3);
+end
+
+
+```
+
+
+###  تابعAveraging:
+```
+function [ y ] = Averaging( x )
+
+x_avg=mean(mean(x));
+y=double(x)-x_avg;
+
+end
+```
+
+
+### تابع scaling of brightness:
+
+```
+function [ y ] = ScalingOfBrightness( x )
+
+x_max=max(max(x));
+y=x./x_max;
+
+end
+
+
+```
