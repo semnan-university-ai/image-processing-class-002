@@ -1,5 +1,5 @@
 clear,clc,close all
-test_money = imread('/Users/Ali/Desktop/image project/data/50000-b.jpeg');
+test_money = imread('/Users/Ali/Desktop/image project/data/2000-b.jpeg');
 [a,b] = size(test_money);
 for i=1:14
 add='/Users/Ali/Desktop/image project/data';
@@ -8,11 +8,11 @@ pet=numel(images(i));
 image=images(i).name
 raw=imread(fullfile(add,image));
 resize_all = imresize(raw,[a,b/3]);
-[test_R,test_G,test_B]=Prepare(test_money);
-[source_R,source_G,source_B]=Prepare(resize_all);
+[test_R,test_G,test_B]=pre_processing(test_money);
+[source_R,source_G,source_B]=pre_processing(resize_all);
 for j=1:a
 for k=1:(b/3)
-out= manhatan_distance(test_R(j,k),test_G(j,k),test_B(j,k),source_R(j,k),source_G(j,k),source_B(j,k));
+out = manhatan_distance(source_R(j,k),test_R(j,k),source_G(j,k),test_G(j,k),source_B(j,k),test_B(j,k));
 val_all(i)=mean(mean(out));
 end
 end
