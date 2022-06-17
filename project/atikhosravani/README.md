@@ -180,4 +180,15 @@ end
 ```
 
 <br/>
+<br/>
 
+
+**نتیجه:**
+
+<br/>
+
+![MR](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/atikhosravani/project/money/MR.png)
+
+<br/>
+
+![MR2](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/atikhosravani/project/money/MR2.png)
