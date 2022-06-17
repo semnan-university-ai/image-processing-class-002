@@ -92,10 +92,7 @@ subplot(ceil(N/7),7,1),imshow(reshape_test,[]),title("orginal");
 
 
  ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/1.png)
- ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/2.png)
  
-
-
 ```
 for n = 1 : N
     mean_Et=0;
@@ -111,7 +108,7 @@ for n = 1 : N
     datastract(n).txt = string(txtcurrency(2));
     fullFileName = fullfile(pathDir, filename);
 ```
-با دستور imhist هیستوگرام تصویر ورودی(تست) محاسبه می‌شود. هیستوگرام بدست امده reshape می‌شود. مقدار alpha برابر با ۱۶ تعیین شده زیرا تنوع اسکناس‌ها و رنگ‌های آن بیش از ۱۶ مورد نیست. با تابع mean میانگین عناصرهیستوگرام تغییر اندازه داده شده محاسبه می‌شود. همچنین واریانس هیستوگرام اصلی و تغییر اندازه داده شده محاسبه می‌شود. مقادیر محاسبه شده نمایش داده می‌شود.
+شماره تصویر خوانده شده در index ذخیره می‌شود. مبلغ اسکناس در نام تصویر بین پرانتز نوشته شده است. نام فایل را ذخیره می‌کنیم و قسمت مبلغ را با split جدا می‌کنیم. مقادیر در متغییر‌های مربوطه ذخیره می‌شوند.
 
 ```
     filee = imread(fullFileName);
@@ -174,6 +171,8 @@ for n = 1 : N
     subplot(ceil((N+1)/7),7,n+1),imshow(rsh_src{n},[]),title({filename,num2str(ssimval)});
 ```
 مقادیر در متغیر‌های مربوطه ذخیره می‌شود. نام فایل، مقدار SSIM و هیستوگرام تغییر اندازه داده شده تصویر نمایش داده می‌شود.
+ ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/2.png)
+
 ```
 mean_E;
 MinVal=min(cell2mat(mean_E));
@@ -210,6 +209,7 @@ disp("SSIM = "+string(datastract(yy).txt));
  ![image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/fvatani/3.png)
 
 **تجزیه و تحلیل میزان موفقیت روش پیشنهادی**
+
 در ادامه جهت سنجش میزان موفقیت روش پیشنهادی، موارد ذکر شده بر روی تمامی تصاویر موجود در فایل testdata در فضای hsv و rgb اعمال شد. ابتدا به بررسی اجمالی کد و درنهایت نتایج می‌پردازیم.
 
 ```
