@@ -123,7 +123,7 @@ title(ax,strcat('your money is  ',string(cashAmount),' toman'));
 legend(ax, 'orginal imaage','test image');  % strcat neveshtane chand chiz dar plot
 end
 ```
-![Uploading true.jpg…]()
+![trueImage](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/msg67/true.jpg)
 
 
 
