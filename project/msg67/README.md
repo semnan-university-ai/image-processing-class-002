@@ -94,6 +94,8 @@ end
 در قسمت‌های بعد، بیشتر کار برای رسم نمودار نتیجه انجام شده است:
 
 با استفاده از بیشترین نقاط اشتراک، تصویر انتخاب شده از دیتابیس ابتدا خاکستری می‌شود، سپس دوباره نقاط اشتراک استخراج می‌شوند، و در آخر نیز به وسیله str2double و با آرگومان '+d\' ابتدا نام رو دابل و سپس مقادیر غیر عددی رو از نام حذف کردیم تا با استفاده از نامی که برای فایل‌های دیتابیس بکار برده شده است، مقدار اسکناس ورودی نوشته می‌شود:
+ 
+(تابع strcat جهت نوشتن چند مورد در plot استفاده می‌شود. legend نیز برای نوشتن شرح عکس در کنار تصویر استفاده می‌شود) 
 
 
 ```
@@ -122,15 +124,13 @@ figure; ax = axes;
 showMatchedFeatures(a,b,matchedPoints1,matchedPoints2,'montage','Parent',ax);
 title(ax,strcat('your money is  ',string(cashAmount),' toman'));
 legend(ax, 'orginal imaage','test image');  
-(تابع strcat جهت نوشتن چند مورد در plot استفاده می‌شود. legend نیز برای نوشتن شرح عکس در کنار تصویر استفاده می‌شود) 
-
 end
 ```
 ![trueImage](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/msg67/true.jpg)
 
 
 
-از مشکلات و معایب و مزایای این کار می‌توان به موارد زیر اشاره کرد:
+از معایب، مزایای و مشکلات این کار می‌توان به موارد زیر اشاره کرد:
 
 - از کارهای جالب این کد، میتوان به تشخیص اسکناس نصفه و چرخانده شده اشاره کرد:
 ![trueImage](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/msg67/rotateAndHalf.jpg)
