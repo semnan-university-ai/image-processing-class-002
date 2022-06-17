@@ -12,7 +12,7 @@ close all;
 باشد به عنوان خروجی مورد نظر انتخاب میشود پروژه شامل 5 فایل کد :یک فایل کد اصلی و 5 فایل توابع می یاشد. همچنین در دیتا ست جمع شده تصاویر پول  a,b,c  به عنوان 
 داده ی معیار استفاده میشوند و  داده ی d ,e به عنوان داده ی تست استفاده میشود.
 ### نمونه استفاده از فاصله اقلیدسی:
-![This is an image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/mobina-t77/project.png)
+![This is an image](https://github.com/semnan-university-ai/image-processing-class-002/blob/main/project/mobina-t77/Euclidean%20Distance.JPG)
 
 ### Making trainsets
 ```
